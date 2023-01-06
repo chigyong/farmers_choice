@@ -35,6 +35,9 @@ li a {
     color: white;
     display: block;
 }
+li a:hover {
+    color: red;
+}
 }
 .menu {
     position: absolute;
