@@ -49,6 +49,24 @@ li a {
 }
 }
 }
+
+/*
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.one {
+    background-color: black;
+}
+.two {
+    background-color: orange;
+}
+.three {
+    background-color: teal;
+}
+*/
 @media only screen and (max-width: 768px) {
     body {
         background-position: center;
