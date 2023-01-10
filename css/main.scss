@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -7,8 +8,11 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
     url(../images/bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -21,6 +25,8 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    position: fixed;
+    width: 100%;
 .logo {
 img {
     height: 45px;
@@ -52,24 +58,61 @@ li a:hover {
 }
 }
 }
-
-/*
 section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 .one {
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+.headings {
+    h2 {
+        font-family: 'Handlee' ,sans-serif;
+        color: red;
+        text-align: center;
+    }
+    h1 {
+        color: white;
+        font-size: 45px;
+    }
+}
+  
+    button {
+        padding: 6px 20px;
+        margin: 30px 5px;
+        cursor: pointer;
+    }
+    .read {
+        background-color: red;
+        color: white;
+        border: none;
+    }
+    .read:hover {
+        background-color: white;
+        color: red;
+        transition: .5s ease;
+    }
+    .shop {
+        background-color: transparent;
+        border-color: white;
+        color: white;
+    }
+    .shop:hover {
+        background-color: white;
+        color: red;
+        transition: .5s ease;
+
+    }
 }
 .two {
-    background-color: orange;
+    background-color: black;
 }
 .three {
-    background-color: teal;
+    background-color: black;
+
 }
-*/
+
 @media only screen and (max-width: 768px) {
     body {
         background-position: center;
@@ -104,7 +147,41 @@ section {
         display: flex;
     }
     }
+section {
+     h1 {  
+        text-align: center;
+    }
 }
+}
+
+@media only screen and (max-width: 400px) {
+    section {
+       .headings {
+        h2 {
+            font-size: 20px;
+        }
+        h1 {
+            padding: 0 1rem;
+        }
+       }
+        
+    }
+}
+@media only screen and (max-width: 350px) {
+    section {
+       .headings {
+        h2 {
+            font-size: 15px;
+        }
+        h1 {
+            padding: 0;
+        }
+       }
+        
+    }
+}
+
+
 @keyframes slide {
     0% {
         transform: translateX(500px);
