@@ -130,7 +130,7 @@ section {
     opacity: .5;
 }
 .three {
-    background-color: white;
+    background-color: black;
     opacity: .5;
 }
 
@@ -151,7 +151,7 @@ footer {
         }
         
         p {
-            font-size: 12px;
+            font-size: 15px;
             text-align: justify;
         }
     }
@@ -199,6 +199,43 @@ footer {
         h1 {
             font-size: 20px;
         }
+        img {
+            filter: brightness(0) invert(1);
+            height: 30px;
+          }
+          ul {
+        padding: 2rem 0;
+
+          }
+        .contact-phone {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+        .contact-email {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+        .contact-location {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+    }
+    .icons {
+
+      img {
+        filter: brightness(0) invert(1);
+        height: 30px;
+      }
+      p {
+        color: white;
+        padding: 1rem 0;
+      }
     }
 }
 }

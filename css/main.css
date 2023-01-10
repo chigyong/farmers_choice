@@ -126,7 +126,7 @@ section {
 }
 
 .three {
-  background-color: white;
+  background-color: black;
   opacity: 0.5;
 }
 
@@ -146,7 +146,7 @@ footer .container .con-logo img {
   margin: 1rem;
 }
 footer .container .con-logo p {
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
 }
 footer .container .other-links h1 {
@@ -185,6 +185,36 @@ footer .container .information li {
 }
 footer .container .contact h1 {
   font-size: 20px;
+}
+footer .container .contact img {
+  filter: brightness(0) invert(1);
+  height: 30px;
+}
+footer .container .contact ul {
+  padding: 2rem 0;
+}
+footer .container .contact .contact-phone {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .container .contact .contact-email {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .container .contact .contact-location {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .container .icons img {
+  filter: brightness(0) invert(1);
+  height: 30px;
+}
+footer .container .icons p {
+  color: white;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 768px) {
