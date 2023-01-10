@@ -209,8 +209,8 @@ footer {
 footer .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 2rem 5rem;
-  gap: 10rem;
+  padding: 2rem 15rem;
+  gap: 2rem;
 }
 footer .container .con-logo img {
   height: 30px;
@@ -228,7 +228,6 @@ footer .container .other-links ul {
 }
 footer .container .other-links li a {
   color: white;
-  margin: 10rem 0;
 }
 footer .container .other-links li {
   padding: 0.5rem;

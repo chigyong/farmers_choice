@@ -201,8 +201,8 @@ footer {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2rem 5rem;
-    gap: 10rem;
+    padding: 2rem 15rem;
+    gap: 2rem;  
 
     .con-logo {
         img {
@@ -224,7 +224,6 @@ footer {
         }
         li a {
             color: white;
-            margin: 10rem 0;
         }
         li {
             padding: .5rem;
