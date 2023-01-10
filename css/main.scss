@@ -200,11 +200,12 @@ footer {
     color: white;
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 2rem 15rem;
     gap: 2rem;  
 
     .con-logo {
+        line-height: 30px;
         img {
             height: 30px;
             margin: 1rem 0;
@@ -212,29 +213,12 @@ footer {
         
         p {
             font-size: 15px;
-            text-align: justify;
         }
     }
-    .other-links {
-        h1 {
-            font-size: 20px;
-        }
-        ul {
-            padding: 1rem 0;
-        }
-        li a {
-            color: white;
-        }
-        li {
-            padding: .5rem;
-        }
-        li a:hover {
-            color: red;
-            transition: .5s ease-in-out;
-        }
-    }
+  
     
     .information {
+        margin: 0 5rem;
         h1 {
             font-size: 20px;
         }
@@ -396,7 +380,11 @@ footer {
      grid-template-columns: repeat(1, 1fr);
      gap: 1rem;
      padding: 1rem;
-    } 
+     .information {
+        margin: 0;
+    }
+    }
+ 
 }
 }
 
@@ -453,6 +441,11 @@ footer {
        }
 }
 
+@media only screen and (max-width: 280px) {
+    footer {
+        font-size: 10px;
+    }
+}
 
 @keyframes slide {
     0% {
