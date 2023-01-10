@@ -76,6 +76,7 @@ nav .navbar-login li a:hover {
 
 section {
   height: 100vh;
+  width: 100%;
 }
 
 .one {
@@ -123,13 +124,77 @@ section {
 }
 
 .two {
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .three {
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.three p {
+  color: red;
+}
+.three h1 {
+  color: white;
+}
+.three .form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 20rem;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.three .form-container input {
+  padding: 15px 50px 15px 10px;
+  border: solid white 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.three .form-container input::-moz-placeholder {
+  color: white;
+}
+.three .form-container input:-ms-input-placeholder {
+  color: white;
+}
+.three .form-container input::placeholder {
+  color: white;
+}
+.three .message-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.three .message-box input {
+  padding: 10px 290px 150px 10px;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 15px;
+}
+.three .message-box input::-moz-placeholder {
+  color: white;
+}
+.three .message-box input:-ms-input-placeholder {
+  color: white;
+}
+.three .message-box input::placeholder {
+  color: white;
+}
+.three .message-box button {
+  padding: 10px 50px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+}
+.three .message-box button:hover {
+  background-color: white;
+  color: red;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 footer {
@@ -288,27 +353,50 @@ footer .container .icons p {
   nav .navbar-login.active {
     display: flex;
   }
-  section h1 {
+  .one h1 {
     text-align: center;
   }
-  footer .container {
+  .three .form-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    padding: 1rem;
+    margin: 0;
+  }
+  .three .form-container input {
+    padding: 15px 150px 15px 10px;
+  }
+  .three .message-box input {
+    padding: 10px 200px 150px 10px;
+  }
+  .three .message-box button {
+    margin-bottom: 15rem;
   }
 }
-@media only screen and (max-width: 768px) and (max-width: 400px) {
+footer .container {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
   .logo img {
     width: 180px;
   }
-  section .headings h2 {
+  .headings h2 {
     font-size: 20px;
   }
-  section .headings h1 {
+  .headings h1 {
     padding: 0 1rem;
   }
+  section {
+    width: 100%;
+  }
+  .three .form-container input {
+    padding: 10px 15px;
+  }
+  .three .message-box input {
+    padding: 10px 150px 200px 10px;
+  }
 }
-@media only screen and (max-width: 768px) and (max-width: 350px) {
+@media only screen and (max-width: 320px) {
   section .headings {
     margin-top: 5rem;
   }
@@ -318,16 +406,17 @@ footer .container .icons p {
   section .headings h1 {
     padding: 0;
   }
-}
-@media only screen and (max-width: 768px) {
-  @-webkit-keyframes slide {
-    0% {
-      transform: translateX(500px);
-    }
+  .three .message-box input {
+    padding: 20px 100px 100px 10px;
   }
-  @keyframes slide {
-    0% {
-      transform: translateX(500px);
-    }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(500px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(500px);
   }
 }/*# sourceMappingURL=main.css.map */
