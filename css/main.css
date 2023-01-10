@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/bg1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/bg1.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -29,6 +29,7 @@ nav {
   -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 nav .logo img {
   height: 45px;
@@ -43,6 +44,7 @@ nav .navbar-links li a {
 }
 nav .navbar-links li a:hover {
   color: red;
+  transition: 0.5s ease;
 }
 nav .menu {
   position: absolute;
@@ -56,6 +58,18 @@ nav .menu .bars {
   background-color: white;
   margin: 3px;
   transition: 0.5s ease-in-out;
+}
+nav .navbar-login ul {
+  display: flex;
+}
+nav .navbar-login li a {
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+nav .navbar-login li a:hover {
+  color: red;
+  transition: 0.5s ease;
 }
 
 section {
@@ -108,10 +122,22 @@ section {
 
 .two {
   background-color: black;
+  opacity: 0.5;
 }
 
 .three {
+  background-color: white;
+  opacity: 0.5;
+}
+
+footer {
   background-color: black;
+  height: 50vh;
+  width: 100%;
+}
+footer .con-logo img {
+  height: 30px;
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,14 +182,37 @@ section {
     text-align: center;
     color: black;
   }
+  nav .navbar-login {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 5.2rem;
+    left: 0;
+    display: none;
+    -webkit-animation: slide 1s;
+            animation: slide 1s;
+  }
+  nav .navbar-login ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  nav .navbar-login li a {
+    color: white;
+    text-align: center;
+  }
   nav .navbar-links.active {
+    display: flex;
+  }
+  nav .navbar-login.active {
     display: flex;
   }
   section h1 {
     text-align: center;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) and (max-width: 400px) {
   .logo img {
     width: 180px;
   }
@@ -174,7 +223,7 @@ section {
     padding: 0 1rem;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 768px) and (max-width: 350px) {
   section .headings {
     margin-top: 5rem;
   }
@@ -185,13 +234,15 @@ section {
     padding: 0;
   }
 }
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(500px);
+@media only screen and (max-width: 768px) {
+  @-webkit-keyframes slide {
+    0% {
+      transform: translateX(500px);
+    }
   }
-}
-@keyframes slide {
-  0% {
-    transform: translateX(500px);
+  @keyframes slide {
+    0% {
+      transform: translateX(500px);
+    }
   }
 }/*# sourceMappingURL=main.css.map */
