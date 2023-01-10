@@ -131,7 +131,9 @@ section {
 }
 
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   width: 100%;
   color: white;
 }
