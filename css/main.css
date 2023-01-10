@@ -212,7 +212,7 @@ footer .container {
 }
 footer .container .con-logo img {
   height: 30px;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 footer .container .con-logo p {
   font-size: 15px;
@@ -369,13 +369,12 @@ footer .container .icons p {
   .three .message-box button {
     margin-bottom: 15rem;
   }
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
-footer .container {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-}
-
 @media only screen and (max-width: 400px) {
   .logo img {
     width: 180px;
