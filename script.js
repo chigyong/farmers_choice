@@ -4,4 +4,5 @@ const navbar = document.getElementsByClassName('navbar-links')[0]
 
 BTN.addEventListener('click', () => {
     navbar.classList.toggle('active')
+    BTN.classList.toggle('active')
 })

@@ -55,6 +55,7 @@ nav .menu .bars {
   padding: 2px 15px;
   background-color: white;
   margin: 3px;
+  transition: 0.5s ease-in-out;
 }
 
 section {
@@ -101,6 +102,9 @@ section {
   color: red;
   transition: 0.5s ease;
 }
+.one p {
+  color: white;
+}
 
 .two {
   background-color: black;
@@ -123,9 +127,18 @@ section {
   nav .menu {
     display: flex;
   }
+  nav .menu.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  nav .menu.active .bars:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  nav .menu.active .bars:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
   nav .navbar-links {
     width: 100%;
-    background-color: black;
+    background-color: white;
     position: absolute;
     top: 5.2rem;
     left: 0;
@@ -141,6 +154,7 @@ section {
   }
   nav .navbar-links li a {
     text-align: center;
+    color: black;
   }
   nav .navbar-links.active {
     display: flex;
@@ -150,6 +164,9 @@ section {
   }
 }
 @media only screen and (max-width: 400px) {
+  .logo img {
+    width: 180px;
+  }
   section .headings h2 {
     font-size: 20px;
   }

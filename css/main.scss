@@ -55,6 +55,7 @@ li a:hover {
     padding: 2px 15px;
     background-color: white;
     margin: 3px;
+    transition: .5s ease-in-out;
 }
 }
 }
@@ -102,7 +103,9 @@ section {
         background-color: white;
         color: red;
         transition: .5s ease;
-
+    }
+    p {
+        color: white;
     }
 }
 .two {
@@ -125,9 +128,19 @@ section {
     .menu {
         display: flex;
     }
+    .menu.active .bars:nth-child(2){
+        opacity: 0;
+    }
+    .menu.active .bars:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .menu.active .bars:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+        
+    }
     .navbar-links {
         width: 100%;
-        background-color: black;
+        background-color: white;
         position: absolute;
         top: 5.2rem;
         left: 0;
@@ -141,6 +154,7 @@ section {
     }
     li a {
         text-align: center;
+        color: black;
     }
     }
     .navbar-links.active{
@@ -155,6 +169,11 @@ section {
 }
 
 @media only screen and (max-width: 400px) {
+    .logo {
+        img {
+            width: 180px;
+        }
+    }
     section {
        .headings {
         h2 {
