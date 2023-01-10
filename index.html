@@ -54,16 +54,24 @@
     <section class="three" id="three">
       <p>Contact</p>
       <h1>Get In Touch</h1>
-      <form action="#">
+      <form
+        action="https://formsubmit.co/e6d387611e1cff0b96960455cf61c8c4"
+        method="POST"
+      >
         <div class="form-container">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="number" placeholder="Phone" />
-          <input type="text" placeholder="Subject" />
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="email" placeholder="Email" />
+          <input type="number" name="phone" placeholder="Phone" />
+          <input type="text" name="message" placeholder="Subject" />
         </div>
         <div class="message-box">
           <input type="text" placeholder="Message" />
-          <button>Send</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://chigyong.github.io/farmers_choice/message.html"
+          />
+          <button type="submit">Send</button>
         </div>
       </form>
     </section>
