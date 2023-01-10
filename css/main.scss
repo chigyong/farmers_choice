@@ -200,7 +200,7 @@ footer {
     color: white;
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem 15rem;
     gap: 2rem;  
 
@@ -216,26 +216,6 @@ footer {
         }
     }
   
-    
-    .information {
-        margin: 0 5rem;
-        h1 {
-            font-size: 20px;
-        }
-        ul {
-            padding: 1rem 0;
-        }
-        li a {
-            color: white;
-        }
-        li a:hover {
-            color: red;
-            transition: .5s ease-in-out;
-        }
-        li {
-            padding: .5rem;
-        }
-    }
     
     .contact {
         h1 {
@@ -282,6 +262,16 @@ footer {
 }
 }
 
+@media only screen and (max-width: 1060px) {
+    footer {
+        .con-logo {
+            font-size: 12px;
+        }
+        .contact {
+            font-size: 12px;
+        }
+    }
+}
 @media only screen and (max-width: 768px) {
     body {
         background-position: center;
@@ -439,6 +429,11 @@ footer {
             }
         }
        }
+    footer {
+        .contact {
+            font-size: 15px;
+        }
+    }
 }
 
 @media only screen and (max-width: 280px) {

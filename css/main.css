@@ -208,7 +208,7 @@ footer {
 }
 footer .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 2rem 15rem;
   gap: 2rem;
 }
@@ -221,25 +221,6 @@ footer .container .con-logo img {
 }
 footer .container .con-logo p {
   font-size: 15px;
-}
-footer .container .information {
-  margin: 0 5rem;
-}
-footer .container .information h1 {
-  font-size: 20px;
-}
-footer .container .information ul {
-  padding: 1rem 0;
-}
-footer .container .information li a {
-  color: white;
-}
-footer .container .information li a:hover {
-  color: red;
-  transition: 0.5s ease-in-out;
-}
-footer .container .information li {
-  padding: 0.5rem;
 }
 footer .container .contact h1 {
   font-size: 20px;
@@ -275,6 +256,14 @@ footer .container .icons p {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 1060px) {
+  footer .con-logo {
+    font-size: 12px;
+  }
+  footer .contact {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 768px) {
   body {
     background-position: center;
@@ -400,6 +389,9 @@ footer .container .icons p {
   }
   .three .message-box input {
     padding: 20px 100px 100px 10px;
+  }
+  footer .contact {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 280px) {
