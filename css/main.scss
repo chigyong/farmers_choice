@@ -17,6 +17,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 nav {
     display: flex;
@@ -50,6 +51,17 @@ li a:hover {
     transition: .5s ease;
 }
 }
+.announcement {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    flex-direction: column;
+    cursor: pointer;
+    img {
+        filter: brightness(0) invert(1);
+        height: 25px;
+    }
+}
 .menu {
     position: absolute;
     flex-direction: column;
@@ -78,6 +90,26 @@ li a:hover {
 }
 }
 }
+
+.announcement-card {
+    background-color: white;
+    height: 88vh;
+    width: 20%;
+    margin-top: 5.5rem;
+    position: absolute;
+    right: 0;
+    animation: announcement .5s;
+    text-align: center;
+    display: none;
+.content {
+    margin: 0 2rem;
+}
+}
+.announcement-card.active {
+    display: flex;
+}
+
+
 section {
     height: 100vh;
     width: 100%;
@@ -378,6 +410,18 @@ footer {
     .navbar-login.active{
         display: flex;
     }
+    .announcement {
+        position: absolute;
+        right: 5rem;
+        top: 1.2rem;
+        flex-direction: column;
+    }
+    }
+    .announcement-card {
+        width: 100%;
+        height: 100vh;
+        top: 0; 
+        left: 0;  
     }
 .one {
     h1 {  
@@ -506,6 +550,11 @@ footer {
 }
 
 @keyframes slide {
+    0% {
+        transform: translateX(500px);
+    }
+}
+@keyframes announcement {
     0% {
         transform: translateX(500px);
     }
