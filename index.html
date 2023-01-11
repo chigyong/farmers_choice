@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/images/302189356_446663100822663_2434393362207122763_n.jpg"
-    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="script.js" defer></script>
     <title>Farmers Choice Meatshop</title>
@@ -58,14 +54,24 @@
         action="https://formsubmit.co/e6d387611e1cff0b96960455cf61c8c4"
         method="POST"
       >
-        <div class="form-container">
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="email" placeholder="Email" />
-          <input type="number" name="phone" placeholder="Phone" />
-          <input type="text" name="subject" placeholder="Subject" />
+        <div class="form-container" id="frm-container">
+          <input type="text" name="name" placeholder="Name" id="name" />
+          <input type="text" name="email" placeholder="Email" id="email" />
+          <input type="number" name="phone" placeholder="Phone" id="phone" />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            id="subject"
+          />
         </div>
         <div class="message-box">
-          <input type="text" name="message" placeholder="Message" />
+          <input
+            type="text"
+            name="message"
+            placeholder="Message"
+            id="message"
+          />
           <input
             type="hidden"
             name="_next"
