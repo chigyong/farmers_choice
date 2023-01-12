@@ -85,6 +85,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
 }
 .one .headings h2 {
   font-family: "Handlee", sans-serif;
@@ -96,24 +98,15 @@ section {
   font-size: 45px;
 }
 .one button {
-  padding: 6px 20px;
+  padding: 10px 30px;
   margin: 30px 5px;
   cursor: pointer;
 }
-.one .read {
-  background-color: red;
-  color: white;
-  border: none;
-}
-.one .read:hover {
-  background-color: white;
-  color: red;
-  transition: 0.5s ease;
-}
 .one .shop {
-  background-color: transparent;
-  border-color: white;
+  background-color: red;
+  border: none;
   color: white;
+  border-radius: 15px;
 }
 .one .shop:hover {
   background-color: white;
@@ -278,11 +271,26 @@ footer .container .contact .contact-location {
   gap: 1rem;
   padding: 0.5rem 0;
 }
-footer .container .icons img {
+footer .footer-line {
+  padding: 1px;
+  background-color: white;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 5rem;
+}
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+footer .icons img {
   filter: brightness(0) invert(1);
   height: 30px;
 }
-footer .container .icons p {
+footer .icons p {
   color: white;
   padding: 1rem 0;
 }
@@ -409,6 +417,12 @@ footer .container .icons p {
   footer .container .information {
     margin: 0;
   }
+  footer .footer-line {
+    left: 1rem;
+  }
+  footer .icons {
+    padding: 1rem;
+  }
 }
 @media only screen and (max-width: 400px) {
   .logo img {
@@ -485,5 +499,25 @@ footer .container .icons p {
 @keyframes announcement {
   0% {
     transform: translateX(500px);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */

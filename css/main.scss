@@ -90,6 +90,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: fadeIn 2s forwards;
 .headings {
     h2 {
         font-family: 'Handlee' ,sans-serif;
@@ -103,24 +104,15 @@ section {
 }
   
     button {
-        padding: 6px 20px;
+        padding: 10px 30px;
         margin: 30px 5px;
         cursor: pointer;
     }
-    .read {
-        background-color: red;
-        color: white;
-        border: none;
-    }
-    .read:hover {
-        background-color: white;
-        color: red;
-        transition: .5s ease;
-    }
     .shop {
-        background-color: transparent;
-        border-color: white;
+        background-color: red;
+        border: none;
         color: white;
+        border-radius: 15px;
     }
     .shop:hover {
         background-color: white;
@@ -287,17 +279,29 @@ footer {
 
         }
     }
-    .icons {
-
-      img {
-        filter: brightness(0) invert(1);
-        height: 30px;
-      }
-      p {
-        color: white;
-        padding: 1rem 0;
-      }
-    }
+}
+.footer-line {
+    padding: 1px;
+    background-color: white;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+    left: 5rem;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  img {
+    filter: brightness(0) invert(1);
+    height: 30px;
+  }
+  p {
+    color: white;
+    padding: 1rem 0;
+  }
 }
 }
 
@@ -435,7 +439,12 @@ footer {
         margin: 0;
     }
     }
- 
+    .footer-line {
+        left: 1rem;
+    }
+    .icons {
+        padding: 1rem;
+    }
 }
 }
 
@@ -530,7 +539,17 @@ footer {
         transform: translateX(500px);
     }
 }
+@keyframes fadeIn {
 
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
