@@ -127,7 +127,10 @@ section {
 
 
 .two {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(79, 35, 35, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
     padding-bottom: 50rem;
     .product-wrapper {
         display: flex;
@@ -163,11 +166,21 @@ section {
 }
 
 .three {
+    background: rgba(169, 169, 169, 0.41);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+}
+
+.four {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.41);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
 
 
     p {
@@ -200,10 +213,10 @@ section {
         input {
             padding: 10px 200px 150px 10px;
             margin: 2rem 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
+            background-color: black;
+            border: solid white 2px;
             border-radius: 15px;
-            color: white;
+            color: white    ;
         }
         input::placeholder {
             color: white;
@@ -404,15 +417,21 @@ footer {
      }
 }
 .two {
-    padding-bottom: 100rem;
+    padding-bottom: 125rem;
     .product-wrapper {
     .product-container {
         grid-template-columns: repeat(1, 1fr);
     }
     }
 }
+
 .three {
-    padding: 60rem 0 20rem 0;
+
+}
+
+
+.four {
+    padding: 30rem 0 20rem 0;
     .form-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 0;

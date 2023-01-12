@@ -118,7 +118,10 @@ section {
 }
 
 .two {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(79, 35, 35, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.9px);
+  -webkit-backdrop-filter: blur(15.9px);
   padding-bottom: 50rem;
 }
 .two .product-wrapper {
@@ -153,70 +156,80 @@ section {
 }
 
 .three {
+  background: rgba(169, 169, 169, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+}
+
+.four {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
 }
-.three p {
+.four p {
   color: red;
 }
-.three h1 {
+.four h1 {
   color: white;
 }
-.three .form-container {
+.four .form-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 20rem;
   gap: 1rem;
 }
-.three .form-container input {
+.four .form-container input {
   padding: 15px 50px 15px 10px;
   border: solid white 2px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   color: white;
 }
-.three .form-container input::-moz-placeholder {
+.four .form-container input::-moz-placeholder {
   color: white;
 }
-.three .form-container input:-ms-input-placeholder {
+.four .form-container input:-ms-input-placeholder {
   color: white;
 }
-.three .form-container input::placeholder {
+.four .form-container input::placeholder {
   color: white;
 }
-.three .message-box {
+.four .message-box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.three .message-box input {
+.four .message-box input {
   padding: 10px 200px 150px 10px;
   margin: 2rem 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
+  background-color: black;
+  border: solid white 2px;
   border-radius: 15px;
   color: white;
 }
-.three .message-box input::-moz-placeholder {
+.four .message-box input::-moz-placeholder {
   color: white;
 }
-.three .message-box input:-ms-input-placeholder {
+.four .message-box input:-ms-input-placeholder {
   color: white;
 }
-.three .message-box input::placeholder {
+.four .message-box input::placeholder {
   color: white;
 }
-.three .message-box button {
+.four .message-box button {
   padding: 10px 50px;
   border-radius: 15px;
   background-color: red;
   color: white;
 }
-.three .message-box button:hover {
+.four .message-box button:hover {
   background-color: white;
   color: red;
   transition: 0.5s ease;
@@ -388,25 +401,25 @@ footer .icons p {
     text-align: center;
   }
   .two {
-    padding-bottom: 100rem;
+    padding-bottom: 125rem;
   }
   .two .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .three {
-    padding: 60rem 0 20rem 0;
+  .four {
+    padding: 30rem 0 20rem 0;
   }
-  .three .form-container {
+  .four .form-container {
     grid-template-columns: repeat(1, 1fr);
     margin: 0;
   }
-  .three .form-container input {
+  .four .form-container input {
     padding: 15px 100px 15px 10px;
   }
-  .three .message-box input {
+  .four .message-box input {
     padding: 10px 100px 150px 10px;
   }
-  .three .message-box button {
+  .four .message-box button {
     margin-bottom: 15rem;
   }
   footer .container {
