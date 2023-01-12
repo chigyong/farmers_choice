@@ -326,12 +326,24 @@ footer .icons p {
   padding: 1rem 0;
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1024px) {
+  .two .product-wrapper .product-container {
+    gap: 0;
+  }
   footer .con-logo {
     font-size: 12px;
   }
   footer .contact {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .two .product-wrapper .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  footer .footer-line {
+    width: 75%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -475,10 +487,19 @@ footer .icons p {
   section {
     width: 100%;
   }
-  .three .form-container input {
+  .two {
+    padding: 1rem 0 130rem 0;
+  }
+  .two .product-wrapper h1 {
+    text-align: center;
+  }
+  .three {
+    padding: 1rem 0 55rem 0;
+  }
+  .four .form-container input {
     padding: 10px 15px;
   }
-  .three .message-box input {
+  .four .message-box input {
     padding: 10px 100px 200px 10px;
   }
 }
@@ -491,6 +512,9 @@ footer .icons p {
   }
   section .headings h1 {
     padding: 0;
+  }
+  .two {
+    padding: 0 0 100rem 0;
   }
   .two .product-wrapper h1 {
     text-align: center;
@@ -505,7 +529,7 @@ footer .icons p {
     height: 160px;
   }
   .three {
-    padding: 40rem 0 20rem 0;
+    padding: 2rem 0 60rem 0;
   }
   .three .message-box input {
     padding: 20px 100px 100px 10px;
@@ -517,6 +541,9 @@ footer .icons p {
 @media only screen and (max-width: 280px) {
   footer {
     font-size: 10px;
+  }
+  .two {
+    padding: 1rem 0 3rem 0;
   }
 }
 @-webkit-keyframes slide {

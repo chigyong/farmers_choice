@@ -336,7 +336,14 @@ footer {
 }
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1024px) {
+    .two {
+    .product-wrapper {
+    .product-container {
+        gap: 0;
+    }
+    }
+    }
     footer {
         .con-logo {
             font-size: 12px;
@@ -345,6 +352,22 @@ footer {
             font-size: 12px;
         }
     }
+}
+
+@media only screen and (max-width: 820px) {
+    .two {
+    .product-wrapper {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+    }
+footer {
+    .footer-line {
+        width: 75%;
+    }
+}
 }
 @media only screen and (max-width: 768px) {
     body {
@@ -509,7 +532,18 @@ footer {
        section {
         width: 100%;
        }
+    .two {
+        padding: 1rem 0 130rem 0;
+    .product-wrapper {
+        h1 {
+            text-align: center;
+        }
+    }
+    }
     .three {
+        padding: 1rem 0 55rem 0;
+    }
+    .four {
         .form-container {
             input {
                 padding: 10px 15px;
@@ -536,6 +570,7 @@ footer {
        }
     }
     .two {
+        padding: 0 0 100rem 0;
         .product-wrapper {
             h1 {
                 text-align: center;
@@ -552,7 +587,7 @@ footer {
         }
     }
     .three {
-        padding: 40rem 0 20rem 0;
+        padding: 2rem 0 60rem 0;
         .message-box {
             input {
                 padding: 20px 100px 100px 10px;
@@ -570,6 +605,9 @@ footer {
     footer {
         font-size: 10px;
     }
+.two {
+    padding: 1rem 0 3rem 0;
+}
 }
 
 @keyframes slide {
