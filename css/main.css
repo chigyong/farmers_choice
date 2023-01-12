@@ -118,10 +118,11 @@ section {
 }
 
 .two {
-  background: rgba(79, 35, 35, 0.36);
+  background: rgba(63, 42, 42, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15.9px);
-  -webkit-backdrop-filter: blur(15.9px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(63, 42, 42, 0.3);
   padding-bottom: 50rem;
 }
 .two .product-wrapper {
