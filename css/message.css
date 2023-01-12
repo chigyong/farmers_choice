@@ -32,4 +32,12 @@ a:hover {
   background-color: white;
   color: red;
   transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 30%;
+  }
 }/*# sourceMappingURL=message.css.map */

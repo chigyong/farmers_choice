@@ -107,14 +107,33 @@
         method="POST"
       >
         <div class="form-container" id="frm-container">
-          <input type="text" name="name" placeholder="Name" id="name" />
-          <input type="text" name="email" placeholder="Email" id="email" />
-          <input type="number" name="phone" placeholder="Phone" id="phone" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            id="name"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            id="email"
+            required
+          />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Phone"
+            id="phone"
+            required
+          />
           <input
             type="text"
             name="subject"
             placeholder="Subject"
             id="subject"
+            required
           />
         </div>
         <div class="message-box">
@@ -123,6 +142,7 @@
             name="message"
             placeholder="Message"
             id="message"
+            required
           />
           <input
             type="hidden"

@@ -29,3 +29,11 @@ a:hover {
     color: red;
     transition: .5s ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 30%;
+    }
+}
