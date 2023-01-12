@@ -506,7 +506,8 @@ footer {
     }
     }
     .footer-line {
-        left: 1rem;
+        left: 2rem;
+        width: 90%;
     }
     .icons {
         padding: 1rem;
@@ -554,6 +555,12 @@ footer {
             padding: 10px 100px 200px 10px;
         }
     }
+    }
+    footer {
+        .footer-line {
+            left: 1rem;
+            width: 90%;
+        }
     }
    
 }

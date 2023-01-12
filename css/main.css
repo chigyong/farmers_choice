@@ -468,7 +468,8 @@ footer .icons p {
     margin: 0;
   }
   footer .footer-line {
-    left: 1rem;
+    left: 2rem;
+    width: 90%;
   }
   footer .icons {
     padding: 1rem;
@@ -501,6 +502,10 @@ footer .icons p {
   }
   .four .message-box input {
     padding: 10px 100px 200px 10px;
+  }
+  footer .footer-line {
+    left: 1rem;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 320px) {
