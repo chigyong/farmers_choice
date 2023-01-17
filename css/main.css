@@ -162,6 +162,8 @@ section {
   padding: 5px 20px;
   margin: 1rem 0;
   border-radius: 15px;
+  background-color: red;
+  color: white;
 }
 .two .product-container .products span {
   padding-left: 1rem;
@@ -169,8 +171,8 @@ section {
   font-weight: bold;
 }
 .two .product-container .products .add:hover {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: red;
   cursor: pointer;
   transition: 0.5s ease;
 }
