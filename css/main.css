@@ -469,21 +469,6 @@ footer .icons p {
   .four .message-box button {
     margin-bottom: 15rem;
   }
-  footer .container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    padding: 1rem;
-  }
-  footer .container .information {
-    margin: 0;
-  }
-  footer .footer-line {
-    left: 2rem;
-    width: 90%;
-  }
-  footer .icons {
-    padding: 1rem;
-  }
 }
 @media only screen and (max-width: 400px) {
   .logo img {

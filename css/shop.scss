@@ -75,67 +75,14 @@ li a:hover {
 }
 }
 }
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    
-}
-.basket-wrapper {
-    position: absolute;
-    top: 15rem;
-    right: 5rem;
-    z-index: 100;
-    height: 30vh;
-    width: 20%;
-}
-.basket {
-    border: solid white 2px;
-    color: white;
-    border-radius: 15px;
-    padding: 1rem 2rem;
-.pickup {
-    padding: 5px 20px;
-    border: solid white 1px;
-    margin: 1rem;
-    border-radius: 15px;
-    input {
-        margin: 0 10px;
-    }
-}
-.delivery {
-    padding: 5px 20px;
-    border: solid white 1px;
-    margin: 1rem;
-    border-radius: 15px;
-    input {
-        margin: 0 10px;
-        color: red;
-        padding: 1rem;
-    }
-}
-.checkout {
-    padding: 5px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    margin: 1rem;
-}
 
-}
-section {
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: start;
-}
 .one {
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 70rem;
+    padding-bottom: 2rem;
     h1 {
         font-size: 35px;
         padding: 10rem 0 0 0;
@@ -144,7 +91,7 @@ section {
     }
     .product-wrapper {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         color: white;
@@ -154,7 +101,7 @@ section {
     .product-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
         margin: 1rem 5rem;
     .products {
         border: solid white 3px;
@@ -197,7 +144,8 @@ section {
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 70rem;
+    padding-bottom: 2rem;
+    
     h1 {
         font-size: 35px;
         padding: 10rem 0 0 0;
@@ -206,7 +154,7 @@ section {
     }
     .product-wrapper {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         color: white;
@@ -216,7 +164,7 @@ section {
     .product-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
         margin: 1rem 5rem;
     .products {
         border: solid white 3px;
@@ -260,7 +208,7 @@ section {
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 70rem;
+    padding-bottom: 2rem;
     h1 {
         font-size: 35px;
         padding: 10rem 0 0 0;
@@ -269,7 +217,7 @@ section {
     }
     .product-wrapper {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         color: white;
@@ -279,7 +227,7 @@ section {
     .product-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
         margin: 1rem 5rem;
     .products {
         border: solid white 3px;
@@ -315,6 +263,150 @@ section {
     }
     }
     }  
+}
+.four {
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 2rem;
+
+    h1 {
+        font-size: 35px;
+        padding: 10rem 0 0 0;
+        text-align: center;
+        color: white;
+    }
+    .basket-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+    .basket {
+        border: solid white 2px;
+        color: white;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        height: 30vh;
+        width: 20%;
+    .pickup {
+        padding: 5px 20px;
+        border: solid white 1px;
+        margin: 1rem;
+        border-radius: 15px;
+        input {
+            margin: 0 10px;
+        }
+    }
+    .delivery {
+        padding: 5px 20px;
+        border: solid white 1px;
+        margin: 1rem;
+        border-radius: 15px;
+        input {
+            margin: 0 10px;
+            color: red;
+            padding: 1rem;
+        }
+    }
+    .checkout {
+        padding: 5px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        margin: 1rem;
+    }
+    .checkout:hover {
+        background-color: white;
+        color: red;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+    }
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    width: 100%;
+    color: white;
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 15rem;
+    gap: 2rem;  
+
+    .con-logo {
+        line-height: 30px;
+        img {
+            height: 30px;
+            margin: 1rem 0;
+        }
+        
+        p {
+            font-size: 15px;
+        }
+    }
+  
+    
+    .contact {
+        h1 {
+            font-size: 20px;
+        }
+        img {
+            filter: brightness(0) invert(1);
+            height: 30px;
+          }
+          ul {
+        padding: 2rem 0;
+
+          }
+        .contact-phone {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+        .contact-email {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+        .contact-location {
+            display: flex;
+            gap: 1rem;
+        padding: .5rem 0;
+
+        }
+    }
+}
+.footer-line {
+    padding: 1px;
+    background-color: white;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+    left: 5rem;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  img {
+    filter: brightness(0) invert(1);
+    height: 30px;
+  }
+  p {
+    color: white;
+    padding: 1rem 0;
+  }
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -382,23 +474,8 @@ section {
         display: flex;
     }
     }
-    .basket-wrapper {
-        height: 40vh;
-        width: 100%;
-        right: 0;
-        top: 48rem;
-        /* From https://css.glass */
-background: rgba(0, 0, 0, 0.35);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(0, 0, 0, 0.3);
-    .basket {
-        margin: 1rem;
-    }
-    }
     .one {
-        padding-bottom: 125rem;
+        padding-bottom: 1rem;
         .product-wrapper {
         .product-container {
             grid-template-columns: repeat(1, 1fr);
@@ -406,7 +483,7 @@ border: 1px solid rgba(0, 0, 0, 0.3);
         }
     }
     .two {
-        padding-bottom: 125rem;
+        padding-bottom: 1rem;
         .product-wrapper {
         .product-container {
             grid-template-columns: repeat(1, 1fr);
@@ -414,23 +491,28 @@ border: 1px solid rgba(0, 0, 0, 0.3);
         }
     }
     .three {
-        padding-bottom: 125rem;
+        padding-bottom: 1rem;
         .product-wrapper {
         .product-container {
             grid-template-columns: repeat(1, 1fr);
         }
         }
     }
+    .four {
+        padding-bottom: 10rem;
+    .basket-wrapper {
+    .basket {
+        width: 80%;
+    }
+    }
 }
+}
+
 
 @media only screen and (max-width: 320px) {
     
-    .basket-wrapper {
-        top: 35.5rem;
-        height: 55vh;
-    }
     .one {
-        padding: 0 0 120rem 0;
+        padding: 0 0 1rem 0;
         .product-wrapper {
             h1 {
                 text-align: center;
@@ -447,7 +529,7 @@ border: 1px solid rgba(0, 0, 0, 0.3);
         }
     }
     .two {
-        padding: 0 0 120rem 0;
+        padding: 0 0 1rem 0;
         .product-wrapper {
             h1 {
                 text-align: center;
@@ -464,7 +546,7 @@ border: 1px solid rgba(0, 0, 0, 0.3);
         }
     }
     .three {
-        padding: 0 0 125rem 0;
+        padding: 0 0 1rem 0;
         .product-wrapper {
             h1 {
                 text-align: center;
@@ -479,6 +561,15 @@ border: 1px solid rgba(0, 0, 0, 0.3);
             }
             }
         }
+    }
+    .four {
+        padding: 0 0 10rem 0;
+    .basket-wrapper {
+    .basket {
+        padding: 2rem;
+        height: 50vh;
+    }
+    }
     }
 }
 

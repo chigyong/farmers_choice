@@ -70,70 +70,13 @@ nav .navbar-login li a:hover {
   transition: 0.5s ease;
 }
 
-.container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-.basket-wrapper {
-  position: absolute;
-  top: 15rem;
-  right: 5rem;
-  z-index: 100;
-  height: 30vh;
-  width: 20%;
-}
-
-.basket {
-  border: solid white 2px;
-  color: white;
-  border-radius: 15px;
-  padding: 1rem 2rem;
-}
-.basket .pickup {
-  padding: 5px 20px;
-  border: solid white 1px;
-  margin: 1rem;
-  border-radius: 15px;
-}
-.basket .pickup input {
-  margin: 0 10px;
-}
-.basket .delivery {
-  padding: 5px 20px;
-  border: solid white 1px;
-  margin: 1rem;
-  border-radius: 15px;
-}
-.basket .delivery input {
-  margin: 0 10px;
-  color: red;
-  padding: 1rem;
-}
-.basket .checkout {
-  padding: 5px 20px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  margin: 1rem;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
 .one {
   background: rgba(0, 0, 0, 0.75);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 70rem;
+  padding-bottom: 2rem;
 }
 .one h1 {
   font-size: 35px;
@@ -143,7 +86,7 @@ section {
 }
 .one .product-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
@@ -152,7 +95,7 @@ section {
 .one .product-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 5rem;
 }
 .one .product-container .products {
@@ -195,7 +138,7 @@ section {
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 70rem;
+  padding-bottom: 2rem;
 }
 .two h1 {
   font-size: 35px;
@@ -205,7 +148,7 @@ section {
 }
 .two .product-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
@@ -214,7 +157,7 @@ section {
 .two .product-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 5rem;
 }
 .two .product-container .products {
@@ -257,7 +200,7 @@ section {
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 70rem;
+  padding-bottom: 2rem;
 }
 .three h1 {
   font-size: 35px;
@@ -267,7 +210,7 @@ section {
 }
 .three .product-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
@@ -276,7 +219,7 @@ section {
 .three .product-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 5rem;
 }
 .three .product-container .products {
@@ -311,6 +254,141 @@ section {
   color: red;
   cursor: pointer;
   transition: 0.5s ease;
+}
+
+.four {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 2rem;
+}
+.four h1 {
+  font-size: 35px;
+  padding: 10rem 0 0 0;
+  text-align: center;
+  color: white;
+}
+.four .basket-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.four .basket {
+  border: solid white 2px;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  height: 30vh;
+  width: 20%;
+}
+.four .basket .pickup {
+  padding: 5px 20px;
+  border: solid white 1px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.four .basket .pickup input {
+  margin: 0 10px;
+}
+.four .basket .delivery {
+  padding: 5px 20px;
+  border: solid white 1px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.four .basket .delivery input {
+  margin: 0 10px;
+  color: red;
+  padding: 1rem;
+}
+.four .basket .checkout {
+  padding: 5px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin: 1rem;
+}
+.four .basket .checkout:hover {
+  background-color: white;
+  color: red;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  width: 100%;
+  color: white;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 15rem;
+  gap: 2rem;
+}
+footer .container .con-logo {
+  line-height: 30px;
+}
+footer .container .con-logo img {
+  height: 30px;
+  margin: 1rem 0;
+}
+footer .container .con-logo p {
+  font-size: 15px;
+}
+footer .container .contact h1 {
+  font-size: 20px;
+}
+footer .container .contact img {
+  filter: brightness(0) invert(1);
+  height: 30px;
+}
+footer .container .contact ul {
+  padding: 2rem 0;
+}
+footer .container .contact .contact-phone {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .container .contact .contact-email {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .container .contact .contact-location {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+footer .footer-line {
+  padding: 1px;
+  background-color: white;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 5rem;
+}
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+footer .icons img {
+  filter: brightness(0) invert(1);
+  height: 30px;
+}
+footer .icons p {
+  color: white;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -376,47 +454,34 @@ section {
   nav .navbar-login.active {
     display: flex;
   }
-  .basket-wrapper {
-    height: 40vh;
-    width: 100%;
-    right: 0;
-    top: 48rem;
-    /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.35);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  .basket-wrapper .basket {
-    margin: 1rem;
-  }
   .one {
-    padding-bottom: 125rem;
+    padding-bottom: 1rem;
   }
   .one .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .two {
-    padding-bottom: 125rem;
+    padding-bottom: 1rem;
   }
   .two .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .three {
-    padding-bottom: 125rem;
+    padding-bottom: 1rem;
   }
   .three .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .four {
+    padding-bottom: 10rem;
+  }
+  .four .basket-wrapper .basket {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 320px) {
-  .basket-wrapper {
-    top: 35.5rem;
-    height: 55vh;
-  }
   .one {
-    padding: 0 0 120rem 0;
+    padding: 0 0 1rem 0;
   }
   .one .product-wrapper h1 {
     text-align: center;
@@ -431,7 +496,7 @@ section {
     height: 160px;
   }
   .two {
-    padding: 0 0 120rem 0;
+    padding: 0 0 1rem 0;
   }
   .two .product-wrapper h1 {
     text-align: center;
@@ -446,7 +511,7 @@ section {
     height: 160px;
   }
   .three {
-    padding: 0 0 125rem 0;
+    padding: 0 0 1rem 0;
   }
   .three .product-wrapper h1 {
     text-align: center;
@@ -459,6 +524,13 @@ section {
   }
   .three .product-wrapper .product-container .products img {
     height: 160px;
+  }
+  .four {
+    padding: 0 0 10rem 0;
+  }
+  .four .basket-wrapper .basket {
+    padding: 2rem;
+    height: 50vh;
   }
 }
 @-webkit-keyframes slide {
