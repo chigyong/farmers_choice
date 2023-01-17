@@ -70,6 +70,11 @@ nav .navbar-login li a:hover {
   transition: 0.5s ease;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .one {
   background: rgba(0, 0, 0, 0.75);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -275,6 +280,9 @@ nav .navbar-login li a:hover {
   align-items: center;
   justify-content: center;
   padding-top: 6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .four .basket {
   border: solid white 2px;
@@ -282,7 +290,7 @@ nav .navbar-login li a:hover {
   border-radius: 15px;
   padding: 1rem 2rem;
   height: 30vh;
-  width: 20%;
+  width: 60%;
 }
 .four .basket .pickup {
   padding: 5px 20px;
@@ -453,6 +461,9 @@ footer .icons p {
   }
   nav .navbar-login.active {
     display: flex;
+  }
+  main {
+    grid-template-columns: repeat(1, 1fr);
   }
   .one {
     padding-bottom: 1rem;

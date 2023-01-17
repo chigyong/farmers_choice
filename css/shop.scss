@@ -76,6 +76,10 @@ li a:hover {
 }
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .one {
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -283,6 +287,8 @@ li a:hover {
         align-items: center;
         justify-content: center;
         padding-top: 6rem;
+        position: sticky;
+        top: 0;
     }
     .basket {
         border: solid white 2px;
@@ -290,7 +296,7 @@ li a:hover {
         border-radius: 15px;
         padding: 1rem 2rem;
         height: 30vh;
-        width: 20%;
+        width: 60%;
     .pickup {
         padding: 5px 20px;
         border: solid white 1px;
@@ -473,6 +479,9 @@ footer {
     .navbar-login.active{
         display: flex;
     }
+    }
+    main {
+        grid-template-columns: repeat(1, 1fr);
     }
     .one {
         padding-bottom: 1rem;
