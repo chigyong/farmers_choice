@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.6px);
+  -webkit-backdrop-filter: blur(12.6px);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+nav .logo img {
+  height: 45px;
+}
+nav .navbar-links ul {
+  display: flex;
+}
+nav .navbar-links li a {
+  padding: 1rem;
+  color: white;
+  display: block;
+}
+nav .navbar-links li a:hover {
+  color: red;
+  transition: 0.5s ease;
+}
+nav .menu {
+  position: absolute;
+  flex-direction: column;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+nav .menu .bars {
+  padding: 2px 15px;
+  background-color: white;
+  margin: 3px;
+  transition: 0.5s ease-in-out;
+}
+nav .navbar-login ul {
+  display: flex;
+}
+nav .navbar-login li a {
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+nav .navbar-login li a:hover {
+  color: red;
+  transition: 0.5s ease;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.one {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 15rem;
+}
+.one .product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding-top: 6rem;
+}
+.one .product-wrapper h1 {
+  font-size: 35px;
+  padding: 1rem 0;
+}
+.one .product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 15rem;
+}
+.one .product-container .products {
+  border: solid white 3px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: black;
+  font-size: 15px;
+}
+.one .product-container .products img {
+  height: 150px;
+  border-radius: 15px;
+}
+.one .product-container .products h2 {
+  padding: 2rem 0;
+}
+.one .product-container .products .add {
+  padding: 5px 20px;
+  margin: 1rem 0;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.one .product-container .products span {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.one .product-container .products .add:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.two {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 15rem;
+  scroll-snap-align: start;
+}
+.two .product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding-top: 6rem;
+}
+.two .product-wrapper h1 {
+  font-size: 35px;
+  padding: 1rem 0;
+}
+.two .product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 15rem;
+}
+.two .product-container .products {
+  border: solid white 3px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: black;
+  font-size: 15px;
+}
+.two .product-container .products img {
+  height: 150px;
+  border-radius: 15px;
+}
+.two .product-container .products h2 {
+  padding: 2rem 0;
+}
+.two .product-container .products .add {
+  padding: 5px 20px;
+  margin: 1rem 0;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.two .product-container .products span {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.two .product-container .products .add:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.three {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 15rem;
+  scroll-snap-align: start;
+}
+.three .product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding-top: 6rem;
+}
+.three .product-wrapper h1 {
+  font-size: 35px;
+  padding: 1rem 0;
+}
+.three .product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 15rem;
+}
+.three .product-container .products {
+  border: solid white 3px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: black;
+  font-size: 15px;
+}
+.three .product-container .products img {
+  height: 150px;
+  border-radius: 15px;
+}
+.three .product-container .products h2 {
+  padding: 2rem 0;
+}
+.three .product-container .products .add {
+  padding: 5px 20px;
+  margin: 1rem 0;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.three .product-container .products span {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.three .product-container .products .add:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .menu {
+    display: flex;
+  }
+  nav .menu.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  nav .menu.active .bars:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  nav .menu.active .bars:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  nav .navbar-links {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5.2rem;
+    left: 0;
+    height: 100vh;
+    -webkit-animation: slide 1s;
+            animation: slide 1s;
+    display: none;
+  }
+  nav .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  nav .navbar-links li a {
+    text-align: center;
+    color: black;
+  }
+  nav .navbar-login {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 5.2rem;
+    left: 0;
+    display: none;
+    -webkit-animation: slide 1s;
+            animation: slide 1s;
+  }
+  nav .navbar-login ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  nav .navbar-login li a {
+    color: white;
+    text-align: center;
+  }
+  nav .navbar-links.active {
+    display: flex;
+  }
+  nav .navbar-login.active {
+    display: flex;
+  }
+  .one {
+    padding-bottom: 125rem;
+  }
+  .one .product-wrapper .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .two {
+    padding-bottom: 125rem;
+  }
+  .two .product-wrapper .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .three {
+    padding-bottom: 125rem;
+  }
+  .three .product-wrapper .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .two {
+    padding: 0 0 115rem 0;
+  }
+  .two .product-wrapper h1 {
+    text-align: center;
+  }
+  .two .product-wrapper .product-container {
+    margin: 0 2rem;
+  }
+  .two .product-wrapper .product-container .products {
+    font-size: 12px;
+  }
+  .two .product-wrapper .product-container .products img {
+    height: 160px;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(500px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(500px);
+  }
+}/*# sourceMappingURL=shop.css.map */

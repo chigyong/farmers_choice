@@ -424,30 +424,18 @@ footer .icons p {
   nav .navbar-login ul {
     flex-direction: column;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
   nav .navbar-login li a {
     color: white;
     text-align: center;
+    font-size: 25px;
   }
   nav .navbar-links.active {
     display: flex;
   }
   nav .navbar-login.active {
     display: flex;
-  }
-  nav .announcement {
-    position: absolute;
-    right: 5rem;
-    top: 1.2rem;
-    flex-direction: column;
-  }
-  .announcement-card {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 5.2rem;
-    left: 0;
   }
   .one h1 {
     text-align: center;
