@@ -489,8 +489,11 @@ main {
         padding: 0 0 10rem 0;
     .basket-wrapper {
     .basket {
-        padding: 2rem;
-        height: 50vh;
+        padding: 10px;
+        height: 70vh;
+    p {
+        text-align: center;
+    }
     }
     }
     }

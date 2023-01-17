@@ -462,8 +462,11 @@ main {
     padding: 0 0 10rem 0;
   }
   .four .basket-wrapper .basket {
-    padding: 2rem;
-    height: 50vh;
+    padding: 10px;
+    height: 70vh;
+  }
+  .four .basket-wrapper .basket p {
+    text-align: center;
   }
 }
 @-webkit-keyframes slide {
