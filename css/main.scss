@@ -450,13 +450,13 @@ footer {
     ul {
         flex-direction: column;
         width: 100%;
-        padding-top: 10rem;
+        padding-top: 5rem;
         
     }
     li a {
         color: white;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
 
     }
     }
@@ -512,7 +512,23 @@ footer {
         }
     }
 }
-
+footer {
+.container {
+     grid-template-columns: repeat(1, 1fr);
+     gap: 1rem;
+     padding: 1rem;
+     .information {
+        margin: 0;
+    }
+    }
+    .footer-line {
+        left: 2rem;
+        width: 90%;
+    }
+    .icons {
+        padding: 1rem;
+    }
+}
 }
 
 
