@@ -14,7 +14,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 nav {
     display: flex;
@@ -80,12 +79,55 @@ li a:hover {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    
+}
+.basket-wrapper {
+    position: absolute;
+    top: 15rem;
+    right: 5rem;
+    z-index: 100;
+    height: 30vh;
+    width: 20%;
+}
+.basket {
+    border: solid white 2px;
+    color: white;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+.pickup {
+    padding: 5px 20px;
+    border: solid white 1px;
+    margin: 1rem;
+    border-radius: 15px;
+    input {
+        margin: 0 10px;
+    }
+}
+.delivery {
+    padding: 5px 20px;
+    border: solid white 1px;
+    margin: 1rem;
+    border-radius: 15px;
+    input {
+        margin: 0 10px;
+        color: red;
+        padding: 1rem;
+    }
+}
+.checkout {
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
 }
 section {
     width: 100%;
     height: 100vh;
     scroll-snap-align: start;
-
 }
 .one {
     background: rgba(0, 0, 0, 0.75);
@@ -93,24 +135,27 @@ section {
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 15rem;
+    padding-bottom: 70rem;
+    h1 {
+        font-size: 35px;
+        padding: 10rem 0 0 0;
+        text-align: center;
+        color: white;
+    }
     .product-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         color: white;
         padding-top: 6rem;
-    h1 {
-        font-size: 35px;
-        padding: 1rem 0;
-    }
+    
     }
     .product-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        margin: 1rem 15rem;
+        margin: 1rem 5rem;
     .products {
         border: solid white 3px;
         padding: .5rem;
@@ -125,18 +170,17 @@ section {
     h2 {
         padding: 2rem 0;
     }
+    input {
+        padding: 5px;
+        border-radius: 15px;
+    }
     .add {
-        padding: 5px 20px;
+        padding: 5px 10px;
         margin: 1rem 0;
         border-radius: 15px;
         background-color: red;
         color: white;
         border: none;
-    }
-    span {
-        padding-left: 1rem;
-        font-size: 20px;
-        font-weight: bold;
     }
     .add:hover {
         background-color: white;
@@ -147,32 +191,33 @@ section {
     }
     }  
 }
-
 .two {
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 15rem;
-    scroll-snap-align: start;
+    padding-bottom: 70rem;
+    h1 {
+        font-size: 35px;
+        padding: 10rem 0 0 0;
+        text-align: center;
+        color: white;
+    }
     .product-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         color: white;
         padding-top: 6rem;
-    h1 {
-        font-size: 35px;
-        padding: 1rem 0;
-    }
+    
     }
     .product-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        margin: 1rem 15rem;
+        margin: 1rem 5rem;
     .products {
         border: solid white 3px;
         padding: .5rem;
@@ -187,18 +232,17 @@ section {
     h2 {
         padding: 2rem 0;
     }
+    input {
+        padding: 5px;
+        border-radius: 15px;
+    }
     .add {
-        padding: 5px 20px;
+        padding: 5px 10px;
         margin: 1rem 0;
         border-radius: 15px;
         background-color: red;
         color: white;
         border: none;
-    }
-    span {
-        padding-left: 1rem;
-        font-size: 20px;
-        font-weight: bold;
     }
     .add:hover {
         background-color: white;
@@ -216,25 +260,27 @@ section {
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 15rem;
-    scroll-snap-align: start;
+    padding-bottom: 70rem;
+    h1 {
+        font-size: 35px;
+        padding: 10rem 0 0 0;
+        text-align: center;
+        color: white;
+    }
     .product-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         color: white;
         padding-top: 6rem;
-    h1 {
-        font-size: 35px;
-        padding: 1rem 0;
-    }
+    
     }
     .product-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        margin: 1rem 15rem;
+        margin: 1rem 5rem;
     .products {
         border: solid white 3px;
         padding: .5rem;
@@ -249,18 +295,17 @@ section {
     h2 {
         padding: 2rem 0;
     }
+    input {
+        padding: 5px;
+        border-radius: 15px;
+    }
     .add {
-        padding: 5px 20px;
+        padding: 5px 10px;
         margin: 1rem 0;
         border-radius: 15px;
         background-color: red;
         color: white;
         border: none;
-    }
-    span {
-        padding-left: 1rem;
-        font-size: 20px;
-        font-weight: bold;
     }
     .add:hover {
         background-color: white;
@@ -337,6 +382,21 @@ section {
         display: flex;
     }
     }
+    .basket-wrapper {
+        height: 40vh;
+        width: 100%;
+        right: 0;
+        top: 48rem;
+        /* From https://css.glass */
+background: rgba(0, 0, 0, 0.35);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+    .basket {
+        margin: 1rem;
+    }
+    }
     .one {
         padding-bottom: 125rem;
         .product-wrapper {
@@ -364,8 +424,47 @@ section {
 }
 
 @media only screen and (max-width: 320px) {
+    
+    .basket-wrapper {
+        top: 35.5rem;
+        height: 55vh;
+    }
+    .one {
+        padding: 0 0 120rem 0;
+        .product-wrapper {
+            h1 {
+                text-align: center;
+            }
+            .product-container {
+                margin: 0 2rem;
+            .products {
+                img {
+                    height: 160px;
+                }
+                font-size: 12px;
+            }
+            }
+        }
+    }
     .two {
-        padding: 0 0 115rem 0;
+        padding: 0 0 120rem 0;
+        .product-wrapper {
+            h1 {
+                text-align: center;
+            }
+            .product-container {
+                margin: 0 2rem;
+            .products {
+                img {
+                    height: 160px;
+                }
+                font-size: 12px;
+            }
+            }
+        }
+    }
+    .three {
+        padding: 0 0 125rem 0;
         .product-wrapper {
             h1 {
                 text-align: center;

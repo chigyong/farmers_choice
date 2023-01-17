@@ -14,7 +14,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 
 nav {
@@ -78,6 +77,50 @@ nav .navbar-login li a:hover {
   height: 100vh;
 }
 
+.basket-wrapper {
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+  z-index: 100;
+  height: 30vh;
+  width: 20%;
+}
+
+.basket {
+  border: solid white 2px;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+.basket .pickup {
+  padding: 5px 20px;
+  border: solid white 1px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.basket .pickup input {
+  margin: 0 10px;
+}
+.basket .delivery {
+  padding: 5px 20px;
+  border: solid white 1px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.basket .delivery input {
+  margin: 0 10px;
+  color: red;
+  padding: 1rem;
+}
+.basket .checkout {
+  padding: 5px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -90,25 +133,27 @@ section {
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 15rem;
+  padding-bottom: 70rem;
+}
+.one h1 {
+  font-size: 35px;
+  padding: 10rem 0 0 0;
+  text-align: center;
+  color: white;
 }
 .one .product-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
   padding-top: 6rem;
 }
-.one .product-wrapper h1 {
-  font-size: 35px;
-  padding: 1rem 0;
-}
 .one .product-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 1rem 15rem;
+  margin: 1rem 5rem;
 }
 .one .product-container .products {
   border: solid white 3px;
@@ -125,18 +170,17 @@ section {
 .one .product-container .products h2 {
   padding: 2rem 0;
 }
+.one .product-container .products input {
+  padding: 5px;
+  border-radius: 15px;
+}
 .one .product-container .products .add {
-  padding: 5px 20px;
+  padding: 5px 10px;
   margin: 1rem 0;
   border-radius: 15px;
   background-color: red;
   color: white;
   border: none;
-}
-.one .product-container .products span {
-  padding-left: 1rem;
-  font-size: 20px;
-  font-weight: bold;
 }
 .one .product-container .products .add:hover {
   background-color: white;
@@ -151,26 +195,27 @@ section {
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 15rem;
-  scroll-snap-align: start;
+  padding-bottom: 70rem;
+}
+.two h1 {
+  font-size: 35px;
+  padding: 10rem 0 0 0;
+  text-align: center;
+  color: white;
 }
 .two .product-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
   padding-top: 6rem;
 }
-.two .product-wrapper h1 {
-  font-size: 35px;
-  padding: 1rem 0;
-}
 .two .product-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 1rem 15rem;
+  margin: 1rem 5rem;
 }
 .two .product-container .products {
   border: solid white 3px;
@@ -187,18 +232,17 @@ section {
 .two .product-container .products h2 {
   padding: 2rem 0;
 }
+.two .product-container .products input {
+  padding: 5px;
+  border-radius: 15px;
+}
 .two .product-container .products .add {
-  padding: 5px 20px;
+  padding: 5px 10px;
   margin: 1rem 0;
   border-radius: 15px;
   background-color: red;
   color: white;
   border: none;
-}
-.two .product-container .products span {
-  padding-left: 1rem;
-  font-size: 20px;
-  font-weight: bold;
 }
 .two .product-container .products .add:hover {
   background-color: white;
@@ -213,26 +257,27 @@ section {
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 15rem;
-  scroll-snap-align: start;
+  padding-bottom: 70rem;
+}
+.three h1 {
+  font-size: 35px;
+  padding: 10rem 0 0 0;
+  text-align: center;
+  color: white;
 }
 .three .product-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
   padding-top: 6rem;
 }
-.three .product-wrapper h1 {
-  font-size: 35px;
-  padding: 1rem 0;
-}
 .three .product-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 1rem 15rem;
+  margin: 1rem 5rem;
 }
 .three .product-container .products {
   border: solid white 3px;
@@ -249,18 +294,17 @@ section {
 .three .product-container .products h2 {
   padding: 2rem 0;
 }
+.three .product-container .products input {
+  padding: 5px;
+  border-radius: 15px;
+}
 .three .product-container .products .add {
-  padding: 5px 20px;
+  padding: 5px 10px;
   margin: 1rem 0;
   border-radius: 15px;
   background-color: red;
   color: white;
   border: none;
-}
-.three .product-container .products span {
-  padding-left: 1rem;
-  font-size: 20px;
-  font-weight: bold;
 }
 .three .product-container .products .add:hover {
   background-color: white;
@@ -332,6 +376,21 @@ section {
   nav .navbar-login.active {
     display: flex;
   }
+  .basket-wrapper {
+    height: 40vh;
+    width: 100%;
+    right: 0;
+    top: 48rem;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .basket-wrapper .basket {
+    margin: 1rem;
+  }
   .one {
     padding-bottom: 125rem;
   }
@@ -352,8 +411,27 @@ section {
   }
 }
 @media only screen and (max-width: 320px) {
+  .basket-wrapper {
+    top: 35.5rem;
+    height: 55vh;
+  }
+  .one {
+    padding: 0 0 120rem 0;
+  }
+  .one .product-wrapper h1 {
+    text-align: center;
+  }
+  .one .product-wrapper .product-container {
+    margin: 0 2rem;
+  }
+  .one .product-wrapper .product-container .products {
+    font-size: 12px;
+  }
+  .one .product-wrapper .product-container .products img {
+    height: 160px;
+  }
   .two {
-    padding: 0 0 115rem 0;
+    padding: 0 0 120rem 0;
   }
   .two .product-wrapper h1 {
     text-align: center;
@@ -365,6 +443,21 @@ section {
     font-size: 12px;
   }
   .two .product-wrapper .product-container .products img {
+    height: 160px;
+  }
+  .three {
+    padding: 0 0 125rem 0;
+  }
+  .three .product-wrapper h1 {
+    text-align: center;
+  }
+  .three .product-wrapper .product-container {
+    margin: 0 2rem;
+  }
+  .three .product-wrapper .product-container .products {
+    font-size: 12px;
+  }
+  .three .product-wrapper .product-container .products img {
     height: 160px;
   }
 }
