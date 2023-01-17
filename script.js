@@ -5,15 +5,6 @@ const navbarLogin = document.getElementsByClassName('navbar-login')[0]
 
 
 BTN.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
     navbarLogin.classList.toggle('active')
     BTN.classList.toggle('active')
-})
-
-//Notif
-let announcement = document.getElementById('announcement')
-let announcementCard = document.getElementById('announcement-card')
-
-announcement.addEventListener('click', () => {
-    announcementCard.classList.toggle('active')
 })

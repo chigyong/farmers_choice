@@ -155,6 +155,25 @@ section {
   height: 150px;
   border-radius: 15px;
 }
+.two .product-container .products h2 {
+  padding: 2rem 0;
+}
+.two .product-container .products .add {
+  padding: 5px 20px;
+  margin: 1rem 0;
+  border-radius: 15px;
+}
+.two .product-container .products span {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.two .product-container .products .add:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 
 .three {
   background: rgba(0, 0, 0, 0.75);

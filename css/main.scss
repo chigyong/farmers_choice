@@ -161,7 +161,25 @@ border: 1px solid rgba(63, 42, 42, 0.3);;
             height: 150px;
             border-radius: 15px;
         }
-        
+    h2 {
+        padding: 2rem 0;
+    }
+    .add {
+        padding: 5px 20px;
+        margin: 1rem 0;
+        border-radius: 15px;
+    }
+    span {
+        padding-left: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .add:hover {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        transition: .5s ease;
+    }
     }
     }  
 }
