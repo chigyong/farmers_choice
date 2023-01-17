@@ -127,11 +127,16 @@ section {
 
 
 .two {
-    background: rgba(63, 42, 42, 0.8);
+    background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-border: 1px solid rgba(63, 42, 42, 0.3);;
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+
+
+
+    
     padding-bottom: 50rem;
     .product-wrapper {
         display: flex;
@@ -188,11 +193,11 @@ border: 1px solid rgba(63, 42, 42, 0.3);;
 }
 
 .three {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(63, 42, 42, 0.8);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.3px);
-    -webkit-backdrop-filter: blur(10.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(63, 42, 42, 0.3);
     color: white;
 .three-container {
     display: flex;
