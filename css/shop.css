@@ -300,19 +300,11 @@ main {
   margin: 1rem;
   border-radius: 15px;
 }
-.four .basket .pickup input {
-  margin: 0 10px;
-}
 .four .basket .delivery {
   padding: 5px 20px;
   border: solid white 1px;
   margin: 1rem;
   border-radius: 15px;
-}
-.four .basket .delivery input {
-  margin: 0 10px;
-  color: red;
-  padding: 1rem;
 }
 .four .basket .checkout {
   padding: 5px 20px;
@@ -327,78 +319,6 @@ main {
   color: red;
   transition: 0.5s ease;
   cursor: pointer;
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-  width: 100%;
-  color: white;
-}
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2rem 15rem;
-  gap: 2rem;
-}
-footer .container .con-logo {
-  line-height: 30px;
-}
-footer .container .con-logo img {
-  height: 30px;
-  margin: 1rem 0;
-}
-footer .container .con-logo p {
-  font-size: 15px;
-}
-footer .container .contact h1 {
-  font-size: 20px;
-}
-footer .container .contact img {
-  filter: brightness(0) invert(1);
-  height: 30px;
-}
-footer .container .contact ul {
-  padding: 2rem 0;
-}
-footer .container .contact .contact-phone {
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 0;
-}
-footer .container .contact .contact-email {
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 0;
-}
-footer .container .contact .contact-location {
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 0;
-}
-footer .footer-line {
-  padding: 1px;
-  background-color: white;
-  flex-direction: column;
-  width: 90%;
-  position: relative;
-  left: 5rem;
-}
-footer .icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem 0;
-}
-footer .icons img {
-  filter: brightness(0) invert(1);
-  height: 30px;
-}
-footer .icons p {
-  color: white;
-  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 768px) {

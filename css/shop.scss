@@ -304,20 +304,13 @@ main {
         border: solid white 1px;
         margin: 1rem;
         border-radius: 15px;
-        input {
-            margin: 0 10px;
-        }
+
     }
     .delivery {
         padding: 5px 20px;
         border: solid white 1px;
         margin: 1rem;
         border-radius: 15px;
-        input {
-            margin: 0 10px;
-            color: red;
-            padding: 1rem;
-        }
     }
     .checkout {
         padding: 5px 20px;
@@ -334,87 +327,6 @@ main {
         cursor: pointer;
     }
     }
-}
-footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    width: 100%;
-    color: white;
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 15rem;
-    gap: 2rem;  
-
-    .con-logo {
-        line-height: 30px;
-        img {
-            height: 30px;
-            margin: 1rem 0;
-        }
-        
-        p {
-            font-size: 15px;
-        }
-    }
-  
-    
-    .contact {
-        h1 {
-            font-size: 20px;
-        }
-        img {
-            filter: brightness(0) invert(1);
-            height: 30px;
-          }
-          ul {
-        padding: 2rem 0;
-
-          }
-        .contact-phone {
-            display: flex;
-            gap: 1rem;
-        padding: .5rem 0;
-
-        }
-        .contact-email {
-            display: flex;
-            gap: 1rem;
-        padding: .5rem 0;
-
-        }
-        .contact-location {
-            display: flex;
-            gap: 1rem;
-        padding: .5rem 0;
-
-        }
-    }
-}
-.footer-line {
-    padding: 1px;
-    background-color: white;
-    flex-direction: column;
-    width: 90%;
-    position: relative;
-    left: 5rem;
-}
-.icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem 0;
-  img {
-    filter: brightness(0) invert(1);
-    height: 30px;
-  }
-  p {
-    color: white;
-    padding: 1rem 0;
-  }
-}
 }
 
 @media only screen and (max-width: 768px) {
