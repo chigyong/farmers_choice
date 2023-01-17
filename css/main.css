@@ -164,6 +164,7 @@ section {
   border-radius: 15px;
   background-color: red;
   color: white;
+  border: none;
 }
 .two .product-container .products span {
   padding-left: 1rem;
