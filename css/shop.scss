@@ -79,6 +79,8 @@ li a:hover {
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    animation: fadeIn 2s forwards;
+
 }
 .one {
     background: rgba(0, 0, 0, 0.75);
@@ -585,5 +587,16 @@ footer {
 @keyframes slide {
     0% {
         transform: translateX(500px);
+    }
+}
+@keyframes fadeIn {
+
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
