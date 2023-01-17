@@ -102,14 +102,12 @@ section {
         font-size: 45px;
     }
 }
-  
-    button {
-        padding: 10px 30px;
-        margin: 30px 5px;
-        cursor: pointer;
-    }
+  .btn {
+    margin: 2rem 0;
+  }
     .shop {
         background-color: red;
+        padding: 5px 20px;
         border: none;
         color: white;
         border-radius: 15px;
@@ -121,6 +119,8 @@ section {
     }
     p {
         color: white;
+        padding: 1rem 0;
+
     }
 }
 

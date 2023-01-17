@@ -97,13 +97,12 @@ section {
   color: white;
   font-size: 45px;
 }
-.one button {
-  padding: 10px 30px;
-  margin: 30px 5px;
-  cursor: pointer;
+.one .btn {
+  margin: 2rem 0;
 }
 .one .shop {
   background-color: red;
+  padding: 5px 20px;
   border: none;
   color: white;
   border-radius: 15px;
@@ -115,6 +114,7 @@ section {
 }
 .one p {
   color: white;
+  padding: 1rem 0;
 }
 
 .two {
