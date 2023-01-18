@@ -240,15 +240,15 @@ main {
         border-radius: 15px;
         padding: 1rem 2rem;
         height: 80vh;
-        width: 60%;
+        width: 55%;
 
         .detail {
             color: red;
-            font-size: 20px;
+            font-size: 15px;
         }
         .price {
             color: red;
-            font-size: 20px;
+            font-size: 15px;
         }
         .detail-container {
             display: grid;
@@ -425,6 +425,17 @@ main {
     }
     }
 }
+}
+
+@media only screen and (max-width: 375px) {
+    .four {
+        .basket-wrapper {
+            margin: 0;
+            .basket {
+                width: 90%;
+            }
+        }
+    }
 }
 
 

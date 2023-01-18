@@ -233,15 +233,15 @@ main {
   border-radius: 15px;
   padding: 1rem 2rem;
   height: 80vh;
-  width: 60%;
+  width: 55%;
 }
 .four .basket .detail {
   color: red;
-  font-size: 20px;
+  font-size: 15px;
 }
 .four .basket .price {
   color: red;
-  font-size: 20px;
+  font-size: 15px;
 }
 .four .basket .detail-container {
   display: grid;
@@ -404,6 +404,14 @@ main {
   .four .basket-wrapper .basket .checkout {
     margin: 1rem 0;
     padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .four .basket-wrapper {
+    margin: 0;
+  }
+  .four .basket-wrapper .basket {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 320px) {
