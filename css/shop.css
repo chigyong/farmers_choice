@@ -179,6 +179,9 @@ main {
   height: 150px;
   border-radius: 15px;
 }
+.two .product-container .products p {
+  color: greenyellow;
+}
 .two .product-container .products h2 {
   padding: 2rem 0;
 }

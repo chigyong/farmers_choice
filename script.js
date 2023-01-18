@@ -19,13 +19,15 @@ function calculateBeef(){
     let sumofTotalBeef = beef * 600;
     document.getElementById('demo').innerHTML = sumofTotalBeef;
     document.getElementById('beef-demo').innerHTML = beef + ' Kilos of Beef';
-    
+    alert('Successfully Added to your Cart')
 }
 function calculateChicken(){
     let chicken = parseFloat(document.getElementById('chicken').value);
     let sumofTotalChicken = chicken * 200;
     document.getElementById('demo').innerHTML = sumofTotalChicken;
     document.getElementById('chicken-demo').innerHTML = chicken + ' Kilos of Chicken';
+    alert('Successfully Added to your Cart')
+
      
 }
 function calculatePork(){
@@ -33,6 +35,8 @@ function calculatePork(){
     let sumofTotalPork = pork * 300;
     document.getElementById('demo').innerHTML = sumofTotalPork;
     document.getElementById('pork-demo').innerHTML = pork + ' Kilos of Pork';
+    alert('Successfully Added to your Cart')
+
 
 }
 function calculateGoat(){
@@ -40,5 +44,6 @@ function calculateGoat(){
     let sumofTotalGoat = goat * 420;
     document.getElementById('demo').innerHTML = sumofTotalGoat;
     document.getElementById('goat-demo').innerHTML = goat + ' Kilos of Goat';
+    alert('Successfully Added to your Cart')
 
 }
