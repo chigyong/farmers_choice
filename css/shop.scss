@@ -109,6 +109,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin: 1rem 5rem;
+        
     .products {
         border: solid white 3px;
         padding: .5rem;
@@ -208,68 +209,6 @@ main {
     }  
 }
 
-.three {
-    background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.3px);
-    -webkit-backdrop-filter: blur(10.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 2rem;
-    h1 {
-        font-size: 35px;
-        padding: 10rem 0 0 0;
-        text-align: center;
-        color: white;
-    }
-    .product-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-        padding-top: 6rem;
-    
-    }
-    .product-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin: 1rem 5rem;
-    .products {
-        border: solid white 3px;
-        padding: .5rem;
-        text-align: center;
-        border-radius: 15px;
-        background-color: black;
-        font-size: 15px;
-        img {
-            height: 150px;
-            border-radius: 15px;
-        }
-    h2 {
-        padding: 2rem 0;
-    }
-    input {
-        padding: 5px;
-        border-radius: 15px;
-    }
-    .add {
-        padding: 5px 10px;
-        margin: 1rem 0;
-        border-radius: 15px;
-        background-color: red;
-        color: white;
-        border: none;
-    }
-    .add:hover {
-        background-color: white;
-        color: red;
-        cursor: pointer;
-        transition: .5s ease;
-    }
-    }
-    }  
-}
 .four {
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -398,6 +337,9 @@ main {
         grid-template-columns: repeat(1, 1fr);
     }
     .one {
+        h1 {
+            font-size: 30px;
+        }
         padding-bottom: 1rem;
         .product-wrapper {
         .product-container {
@@ -406,6 +348,9 @@ main {
         }
     }
     .two {
+        h1 {
+            font-size: 30px;
+        }
         padding-bottom: 1rem;
         .product-wrapper {
         .product-container {
@@ -413,15 +358,11 @@ main {
         }
         }
     }
-    .three {
-        padding-bottom: 1rem;
-        .product-wrapper {
-        .product-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        }
-    }
+   
     .four {
+        h1 {
+            font-size: 30px;
+        }
         padding-bottom: 10rem;
     .basket-wrapper {
     .basket {
@@ -468,23 +409,7 @@ main {
             }
         }
     }
-    .three {
-        padding: 0 0 1rem 0;
-        .product-wrapper {
-            h1 {
-                text-align: center;
-            }
-            .product-container {
-                margin: 0 2rem;
-            .products {
-                img {
-                    height: 160px;
-                }
-                font-size: 12px;
-            }
-            }
-        }
-    }
+   
     .four {
         padding: 0 0 10rem 0;
     .basket-wrapper {

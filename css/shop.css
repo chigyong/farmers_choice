@@ -201,68 +201,6 @@ main {
   transition: 0.5s ease;
 }
 
-.three {
-  background: rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.3px);
-  -webkit-backdrop-filter: blur(10.3px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 2rem;
-}
-.three h1 {
-  font-size: 35px;
-  padding: 10rem 0 0 0;
-  text-align: center;
-  color: white;
-}
-.three .product-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding-top: 6rem;
-}
-.three .product-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 1rem 5rem;
-}
-.three .product-container .products {
-  border: solid white 3px;
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 15px;
-  background-color: black;
-  font-size: 15px;
-}
-.three .product-container .products img {
-  height: 150px;
-  border-radius: 15px;
-}
-.three .product-container .products h2 {
-  padding: 2rem 0;
-}
-.three .product-container .products input {
-  padding: 5px;
-  border-radius: 15px;
-}
-.three .product-container .products .add {
-  padding: 5px 10px;
-  margin: 1rem 0;
-  border-radius: 15px;
-  background-color: red;
-  color: white;
-  border: none;
-}
-.three .product-container .products .add:hover {
-  background-color: white;
-  color: red;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-
 .four {
   background: rgba(0, 0, 0, 0.75);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -390,23 +328,26 @@ main {
   .one {
     padding-bottom: 1rem;
   }
+  .one h1 {
+    font-size: 30px;
+  }
   .one .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .two {
     padding-bottom: 1rem;
   }
+  .two h1 {
+    font-size: 30px;
+  }
   .two .product-wrapper .product-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .three {
-    padding-bottom: 1rem;
-  }
-  .three .product-wrapper .product-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .four {
     padding-bottom: 10rem;
+  }
+  .four h1 {
+    font-size: 30px;
   }
   .four .basket-wrapper .basket {
     width: 80%;
@@ -441,21 +382,6 @@ main {
     font-size: 12px;
   }
   .two .product-wrapper .product-container .products img {
-    height: 160px;
-  }
-  .three {
-    padding: 0 0 1rem 0;
-  }
-  .three .product-wrapper h1 {
-    text-align: center;
-  }
-  .three .product-wrapper .product-container {
-    margin: 0 2rem;
-  }
-  .three .product-wrapper .product-container .products {
-    font-size: 12px;
-  }
-  .three .product-wrapper .product-container .products img {
     height: 160px;
   }
   .four {
