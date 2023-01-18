@@ -236,20 +236,32 @@ main {
         color: white;
         border-radius: 15px;
         padding: 1rem 2rem;
-        height: 40vh;
+        height: 80vh;
         width: 60%;
-    .pickup {
-        padding: 5px 20px;
-        border: solid white 1px;
-        margin: 1rem;
-        border-radius: 15px;
 
-    }
-    .delivery {
+        .detail {
+            color: red;
+            font-size: 20px;
+        }
+        .cart {
+            font-size: 18px;
+        }
+        .peso {
+            font-size: 18px;
+        }
+        #demo {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .note {
+            font-size: 15px;
+            padding-top: 5rem;
+        }
+    select {
         padding: 5px 20px;
-        border: solid white 1px;
-        margin: 1rem;
-        border-radius: 15px;
+        margin: 1rem 0;
     }
     .checkout {
         padding: 5px 20px;

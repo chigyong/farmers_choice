@@ -43,31 +43,39 @@
                 <img src="images/beef.jpg" alt="beef" />
                 <h2>Beef Cut</h2>
                 <p>&#8369; 600 per kilo</p>
-                <input type="number" placeholder="kilo" />
-                <button class="add">Add to cart</button>
+                <input type="number" placeholder="kilo" id="beef" />
+                <button class="add" onclick="calculateBeef()">
+                  Add to cart
+                </button>
               </div>
               <div class="products" id="pro2">
                 <img src="images/chicken.jpg" alt="" />
                 <h2>Chicken Cut</h2>
                 <p>&#8369; 200 per kilo</p>
-                <input type="number" placeholder="kilo" />
-                <button class="add">Add to cart</button>
+                <input type="number" placeholder="kilo" id="chicken" />
+                <button class="add" onclick="calculateChicken()">
+                  Add to cart
+                </button>
               </div>
 
               <div class="products" id="pro3">
                 <img src="images/pork.jpg" alt="" />
                 <h2>Pork Cut</h2>
                 <p>&#8369; 300 per kilo</p>
-                <input type="number" placeholder="kilo" />
-                <button class="add">Add to cart</button>
+                <input type="number" placeholder="kilo" id="pork" />
+                <button class="add" onclick="calculatePork()">
+                  Add to cart
+                </button>
               </div>
 
               <div class="products" id="pro4">
                 <img src="images/goat.jpg" alt="" />
                 <h2>Goat Cut</h2>
                 <p>&#8369; 420 per kilo</p>
-                <input type="number" placeholder="kilo" />
-                <button class="add">Add to cart</button>
+                <input type="number" placeholder="kilo" id="goat" />
+                <button class="add" onclick="calculateGoat()">
+                  Add to cart
+                </button>
               </div>
             </div>
           </div>
@@ -120,10 +128,18 @@
         <h1>TOTAL</h1>
         <div class="basket-wrapper">
           <div class="basket" id="basket">
-            <p>Cart Total: &#8369; 0.00</p>
-            <div class="pickup"><input type="radio" />Pick up</div>
-            <div class="delivery"><input type="radio" />Delivery</div>
-            <p>
+            <p class="cart">Cart Total:</p>
+            <p class="peso">&#8369; <span id="demo">0.00</span></p>
+            <p class="detail">Order Details</p>
+            <p id="beef-demo"></p>
+            <p id="chicken-demo"></p>
+            <p id="pork-demo"></p>
+            <p id="goat-demo"></p>
+            <select id="method">
+              <option value="">Pick up</option>
+              <option value="">Delivery</option>
+            </select>
+            <p class="note">
               Note: For every 100 pesos worth of purchase there is 1 peso rebate
               to the customers.
             </p>

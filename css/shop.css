@@ -229,20 +229,32 @@ main {
   color: white;
   border-radius: 15px;
   padding: 1rem 2rem;
-  height: 40vh;
+  height: 80vh;
   width: 60%;
 }
-.four .basket .pickup {
-  padding: 5px 20px;
-  border: solid white 1px;
-  margin: 1rem;
-  border-radius: 15px;
+.four .basket .detail {
+  color: red;
+  font-size: 20px;
 }
-.four .basket .delivery {
+.four .basket .cart {
+  font-size: 18px;
+}
+.four .basket .peso {
+  font-size: 18px;
+}
+.four .basket #demo {
+  font-size: 18px;
+}
+.four .basket p {
+  font-size: 12px;
+}
+.four .basket .note {
+  font-size: 15px;
+  padding-top: 5rem;
+}
+.four .basket select {
   padding: 5px 20px;
-  border: solid white 1px;
-  margin: 1rem;
-  border-radius: 15px;
+  margin: 1rem 0;
 }
 .four .basket .checkout {
   padding: 5px 20px;
