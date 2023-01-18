@@ -11,12 +11,6 @@ BTN.addEventListener('click', () => {
 
 
 //Shop Script
-let sumofTotalBeef = beef * 600;
-let sumofTotalChicken = chicken * 200;
-let sumofTotalPork = pork * 300;
-let sumofTotalGoat = goat * 420;
-
-
 
 function calculateBeef(){
     let beef = parseFloat(document.getElementById('beef').value);
@@ -49,7 +43,9 @@ function calculateGoat(){
     document.getElementById('goat-demo').innerHTML = goat + ' Kilos of Goat';
     document.getElementById('success4').innerHTML = 'Successfully Added on your Cart';
     document.getElementById('success4').style.color = 'Green';
+  
 }
+
 
 function totalSum() {
     let beef = parseFloat(document.getElementById('beef').value);
@@ -61,12 +57,12 @@ function totalSum() {
     let goat = parseFloat(document.getElementById('goat').value);
     let sumofTotalGoat = goat * 420;
 
-    const arr = [sumofTotalBeef,sumofTotalChicken,sumofTotalPork,sumofTotalGoat]    
-
+  
+    const arr = [sumofTotalBeef,sumofTotalChicken,sumofTotalPork,sumofTotalGoat]
     let sum = 0;
-
     for(const value of arr) {
         sum += value;
     document.getElementById('total').innerHTML = sum;
     }
+
 }
