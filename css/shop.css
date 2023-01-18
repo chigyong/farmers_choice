@@ -315,6 +315,7 @@ main {
   nav .navbar-login li a {
     color: white;
     text-align: center;
+    font-size: 30px;
   }
   nav .navbar-links.active {
     display: flex;
