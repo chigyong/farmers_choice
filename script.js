@@ -12,12 +12,10 @@ BTN.addEventListener('click', () => {
 
 //Shop Script
 
-
-
 function calculateBeef(){
     let beef = parseFloat(document.getElementById('beef').value);
     let sumofTotalBeef = beef * 600;
-    document.getElementById('demo').innerHTML = sumofTotalBeef;
+    document.getElementById('beef-price').innerHTML = sumofTotalBeef
     document.getElementById('beef-demo').innerHTML = beef + ' Kilos of Beef';
     document.getElementById('success1').innerHTML = 'Successfully Added on your Cart';
     document.getElementById('success1').style.color = 'Green';
@@ -25,7 +23,7 @@ function calculateBeef(){
 function calculateChicken(){
     let chicken = parseFloat(document.getElementById('chicken').value);
     let sumofTotalChicken = chicken * 200;
-    document.getElementById('demo').innerHTML = sumofTotalChicken;
+    document.getElementById('chicken-price').innerHTML = sumofTotalChicken
     document.getElementById('chicken-demo').innerHTML = chicken + ' Kilos of Chicken';
     document.getElementById('success2').innerHTML = 'Successfully Added on your Cart';
     document.getElementById('success2').style.color = 'Green';
@@ -33,7 +31,7 @@ function calculateChicken(){
 function calculatePork(){
     let pork = parseFloat(document.getElementById('pork').value);
     let sumofTotalPork = pork * 300;
-    document.getElementById('demo').innerHTML = sumofTotalPork;
+    document.getElementById('pork-price').innerHTML = sumofTotalPork
     document.getElementById('pork-demo').innerHTML = pork + ' Kilos of Pork';
     document.getElementById('success3').innerHTML = 'Successfully Added on your Cart';
     document.getElementById('success3').style.color = 'Green';
@@ -41,8 +39,17 @@ function calculatePork(){
 function calculateGoat(){
     let goat = parseFloat(document.getElementById('goat').value);
     let sumofTotalGoat = goat * 420;
-    document.getElementById('demo').innerHTML = sumofTotalGoat;
+    document.getElementById('goat-price').innerHTML = sumofTotalGoat
     document.getElementById('goat-demo').innerHTML = goat + ' Kilos of Goat';
     document.getElementById('success4').innerHTML = 'Successfully Added on your Cart';
     document.getElementById('success4').style.color = 'Green';
+}
+
+function totalSum() {
+    let beef_price = parseInt(document.getElementById('beef-price').value);
+    let chicken_price = parseInt(document.getElementById('chicken-price').value);
+    let pork_price = parseInt(document.getElementById('pork-price').value);
+    let goat_price = parseInt(document.getElementById('goat-price').value);
+    document.getElementById('total').innerHTML = beef_price + chicken_price + pork_price + goat_price;
+
 }

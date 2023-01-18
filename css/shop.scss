@@ -246,8 +246,18 @@ main {
             color: red;
             font-size: 20px;
         }
+        .price {
+            color: red;
+            font-size: 20px;
+        }
+        .detail-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8rem;
+        }
         .cart {
             font-size: 18px;
+            padding-top: 5rem;
         }
         .peso {
             font-size: 18px;
@@ -257,6 +267,20 @@ main {
         }
         p {
             font-size: 12px;
+        }
+        .calculate {
+            padding: 5px 20px;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+            margin: 0 1rem 0 0;
+        }
+        .calculate:hover {
+            background-color: white;
+            color: red;
+            transition: .5s ease-in-out;
+            cursor: pointer;
         }
         .note {
             font-size: 15px;
@@ -384,7 +408,20 @@ main {
         padding-bottom: 10rem;
     .basket-wrapper {
     .basket {
-        width: 80%;
+        width: 90%;
+    .detail-container {
+        gap: 5rem;
+    }
+    .detail {
+        font-size: 18px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .checkout {
+        margin: 1rem 0;
+        padding: 10px 15px;
+    }
     }
     }
 }
@@ -433,9 +470,21 @@ main {
     .basket-wrapper {
     .basket {
         padding: 10px;
-        height: 65vh;
+        height: 100vh;
     p {
         text-align: center;
+    }
+    .detail-container {
+        gap: 2rem;
+    }
+    .detail {
+        font-size: 13px;
+    }
+    .price {
+        font-size: 13px;
+    }
+    .note {
+        font-size: 13px;
     }
     }
     }

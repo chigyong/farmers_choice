@@ -132,13 +132,26 @@
         <h1>TOTAL</h1>
         <div class="basket-wrapper">
           <div class="basket" id="basket">
+            <div class="detail-container">
+              <div class="left">
+                <p class="detail">Order Details</p>
+                <p id="beef-demo"></p>
+                <p id="chicken-demo"></p>
+                <p id="pork-demo"></p>
+                <p id="goat-demo"></p>
+              </div>
+              <div class="right">
+                <p class="price">Prices</p>
+                <p id="beef-price"></p>
+                <p id="chicken-price"></p>
+                <p id="pork-price"></p>
+                <p id="goat-price"></p>
+              </div>
+            </div>
+
             <p class="cart">Cart Total:</p>
-            <p class="peso">&#8369; <span id="demo">0.00</span></p>
-            <p class="detail">Order Details</p>
-            <p id="beef-demo"></p>
-            <p id="chicken-demo"></p>
-            <p id="pork-demo"></p>
-            <p id="goat-demo"></p>
+            <p class="peso">&#8369; <span id="total">0.00</span></p>
+            <button class="calculate" onclick="totalSum()">Calculate</button>
             <select id="method">
               <option value="">Pick up</option>
               <option value="">Delivery</option>

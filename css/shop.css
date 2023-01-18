@@ -239,8 +239,18 @@ main {
   color: red;
   font-size: 20px;
 }
+.four .basket .price {
+  color: red;
+  font-size: 20px;
+}
+.four .basket .detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+}
 .four .basket .cart {
   font-size: 18px;
+  padding-top: 5rem;
 }
 .four .basket .peso {
   font-size: 18px;
@@ -250,6 +260,20 @@ main {
 }
 .four .basket p {
   font-size: 12px;
+}
+.four .basket .calculate {
+  padding: 5px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  margin: 0 1rem 0 0;
+}
+.four .basket .calculate:hover {
+  background-color: white;
+  color: red;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 .four .basket .note {
   font-size: 15px;
@@ -366,7 +390,20 @@ main {
     font-size: 30px;
   }
   .four .basket-wrapper .basket {
-    width: 80%;
+    width: 90%;
+  }
+  .four .basket-wrapper .basket .detail-container {
+    gap: 5rem;
+  }
+  .four .basket-wrapper .basket .detail {
+    font-size: 18px;
+  }
+  .four .basket-wrapper .basket .price {
+    font-size: 18px;
+  }
+  .four .basket-wrapper .basket .checkout {
+    margin: 1rem 0;
+    padding: 10px 15px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -405,10 +442,22 @@ main {
   }
   .four .basket-wrapper .basket {
     padding: 10px;
-    height: 65vh;
+    height: 100vh;
   }
   .four .basket-wrapper .basket p {
     text-align: center;
+  }
+  .four .basket-wrapper .basket .detail-container {
+    gap: 2rem;
+  }
+  .four .basket-wrapper .basket .detail {
+    font-size: 13px;
+  }
+  .four .basket-wrapper .basket .price {
+    font-size: 13px;
+  }
+  .four .basket-wrapper .basket .note {
+    font-size: 13px;
   }
 }
 @-webkit-keyframes slide {
