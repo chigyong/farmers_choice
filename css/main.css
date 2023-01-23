@@ -65,6 +65,10 @@ nav .menu .bars {
 nav .navbar-login ul {
   display: flex;
 }
+nav .navbar-login img {
+  filter: brightness(0) invert(1);
+  height: 30px;
+}
 nav .navbar-login li a {
   color: white;
   padding: 0.5rem;

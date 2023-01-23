@@ -68,11 +68,16 @@ li a:hover {
 ul {
     display: flex;
 }
+img {
+    filter: brightness(0) invert(1);
+    height: 30px;
+  }
 li a {
     color: white;
     padding: .5rem;
     display: block;
 }
+
 li a:hover {
     color: red;
     transition: .5s ease;
@@ -453,8 +458,8 @@ footer {
         color: white;
         text-align: center;
         font-size: 30px;
-
     }
+   
     }
     .navbar-links.active{
         display: flex;
