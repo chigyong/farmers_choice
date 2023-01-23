@@ -178,6 +178,16 @@ section {
     padding: 10rem 0;
   }
 }
+@media only screen and (max-width: 400px) {
+  section {
+    height: 160vh;
+  }
+}
+@media only screen and (max-width: 320px) {
+  section {
+    height: 250vh;
+  }
+}
 @-webkit-keyframes slide {
   0% {
     transform: translateX(500px);

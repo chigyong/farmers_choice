@@ -187,6 +187,17 @@ section {
     
 }
 }
+@media only screen and (max-width: 400px) {
+    section {
+        height: 160vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    section {
+        height: 250vh;
+    }
+}
 @keyframes slide {
     0% {
         transform: translateX(500px);
