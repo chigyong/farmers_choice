@@ -64,6 +64,4 @@ function totalSum() {
         sum += value;
     document.getElementById('total').innerHTML = sum;
     }
-  
-
 }

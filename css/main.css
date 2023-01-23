@@ -578,16 +578,6 @@ footer .icons p {
     transform: translateX(500px);
   }
 }
-@-webkit-keyframes announcement {
-  0% {
-    transform: translateX(500px);
-  }
-}
-@keyframes announcement {
-  0% {
-    transform: translateX(500px);
-  }
-}
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
