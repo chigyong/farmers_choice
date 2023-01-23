@@ -87,12 +87,19 @@ section {
 }
 
 .announcement {
-  padding-top: 10rem;
+  padding: 10rem 5rem 0 5rem;
 }
 .announcement h1 {
   color: white;
   text-align: center;
   font-size: 30px;
+}
+.announcement p {
+  color: white;
+  text-align: justify;
+  padding: 2rem;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -163,6 +170,12 @@ section {
   }
   nav .navbar-login.active {
     display: flex;
+  }
+  section {
+    height: 150vh;
+  }
+  .announcement {
+    padding: 10rem 0;
   }
 }
 @-webkit-keyframes slide {

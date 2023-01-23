@@ -92,15 +92,20 @@ border: 1px solid rgba(7, 6, 6, 0.3);
 height: 100vh;
 }
 .announcement {
-    padding-top: 10rem;
+    padding: 10rem 5rem 0 5rem;
 h1 {
     color: white;
     text-align: center;
     font-size: 30px;
 }
+p {
+    color: white;
+    text-align: justify;
+    padding: 2rem;
+    line-height: 30px;
+    font-size: 20px;
 }
-
-
+}
 
 @media only screen and (max-width: 768px) {
     body {
@@ -174,6 +179,13 @@ h1 {
         display: flex;
     }
     }
+section {
+   height: 150vh;
+}
+.announcement {
+    padding: 10rem 0;
+    
+}
 }
 @keyframes slide {
     0% {
