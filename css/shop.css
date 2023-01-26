@@ -57,15 +57,15 @@ nav .menu .bars {
   margin: 3px;
   transition: 0.5s ease-in-out;
 }
-nav .navbar-login ul {
+nav .navbar-shop ul {
   display: flex;
 }
-nav .navbar-login li a {
+nav .navbar-shop li a {
   color: white;
   padding: 0.5rem;
   display: block;
 }
-nav .navbar-login li a:hover {
+nav .navbar-shop li a:hover {
   color: red;
   transition: 0.5s ease;
 }
@@ -335,7 +335,7 @@ main {
     text-align: center;
     color: black;
   }
-  nav .navbar-login {
+  nav .navbar-shop {
     background-color: black;
     height: 100vh;
     width: 100%;
@@ -346,12 +346,12 @@ main {
     -webkit-animation: slide 1s;
             animation: slide 1s;
   }
-  nav .navbar-login ul {
+  nav .navbar-shop ul {
     flex-direction: column;
     width: 100%;
     padding-top: 5rem;
   }
-  nav .navbar-login li a {
+  nav .navbar-shop li a {
     color: white;
     text-align: center;
     font-size: 30px;
@@ -359,7 +359,7 @@ main {
   nav .navbar-links.active {
     display: flex;
   }
-  nav .navbar-login.active {
+  nav .navbar-shop.active {
     display: flex;
   }
   main {

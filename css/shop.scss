@@ -60,7 +60,7 @@ li a:hover {
     transition: .5s ease-in-out;
 }
 }
-.navbar-login {
+.navbar-shop {
 ul {
     display: flex;
 }
@@ -346,7 +346,7 @@ main {
     }
    
     }
-    .navbar-login {
+    .navbar-shop {
         background-color: black;
         height: 100vh;
         width: 100%;
@@ -371,7 +371,7 @@ main {
     .navbar-links.active{
         display: flex;
     }
-    .navbar-login.active{
+    .navbar-shop.active{
         display: flex;
     }
     }
