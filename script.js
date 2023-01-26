@@ -1,7 +1,7 @@
 //Responsive BTN
 const BTN = document.getElementsByClassName('menu')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const navbarLogin = document.getElementsByClassName('navbar-login')[0]
+const navbarLogin = document.getElementsByClassName('navbar-shop')[0]
 
 
 BTN.addEventListener('click', () => {

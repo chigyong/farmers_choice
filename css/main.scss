@@ -64,7 +64,7 @@ li a:hover {
     transition: .5s ease-in-out;
 }
 }
-.navbar-login {
+.navbar-shop {
 ul {
     display: flex;
 }
@@ -439,7 +439,7 @@ footer {
     }
    
     }
-    .navbar-login {
+    .navbar-shop {
         background-color: black;
         height: 100vh;
         width: 100%;
@@ -464,7 +464,7 @@ footer {
     .navbar-links.active{
         display: flex;
     }
-    .navbar-login.active{
+    .navbar-shop.active{
         display: flex;
     }
     }
