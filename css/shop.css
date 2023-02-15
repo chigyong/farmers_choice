@@ -73,8 +73,7 @@ nav .navbar-shop li a:hover {
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -webkit-animation: fadeIn 2s forwards;
-          animation: fadeIn 2s forwards;
+  animation: fadeIn 2s forwards;
 }
 
 .one {
@@ -223,7 +222,6 @@ main {
   align-items: center;
   justify-content: center;
   padding-top: 6rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -322,8 +320,7 @@ main {
     top: 5.2rem;
     left: 0;
     height: 100vh;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
     display: none;
   }
   nav .navbar-links ul {
@@ -343,8 +340,7 @@ main {
     top: 5.2rem;
     left: 0;
     display: none;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
   }
   nav .navbar-shop ul {
     flex-direction: column;
@@ -468,24 +464,9 @@ main {
     font-size: 13px;
   }
 }
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(500px);
-  }
-}
 @keyframes slide {
   0% {
     transform: translateX(500px);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes fadeIn {

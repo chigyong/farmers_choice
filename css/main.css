@@ -89,8 +89,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  -webkit-animation: fadeIn 2s forwards;
-          animation: fadeIn 2s forwards;
+  animation: fadeIn 2s forwards;
 }
 .one .headings h2 {
   font-family: "Handlee", sans-serif;
@@ -238,9 +237,6 @@ section {
 .four .form-container input::-moz-placeholder {
   color: white;
 }
-.four .form-container input:-ms-input-placeholder {
-  color: white;
-}
 .four .form-container input::placeholder {
   color: white;
 }
@@ -259,9 +255,6 @@ section {
   color: white;
 }
 .four .message-box input::-moz-placeholder {
-  color: white;
-}
-.four .message-box input:-ms-input-placeholder {
   color: white;
 }
 .four .message-box input::placeholder {
@@ -401,8 +394,7 @@ footer .icons p {
     top: 5.2rem;
     left: 0;
     height: 100vh;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
     display: none;
   }
   nav .navbar-links ul {
@@ -422,8 +414,7 @@ footer .icons p {
     top: 5.2rem;
     left: 0;
     display: none;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
   }
   nav .navbar-shop ul {
     flex-direction: column;
@@ -568,24 +559,9 @@ footer .icons p {
     padding: 1rem 0 110rem 0;
   }
 }
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(500px);
-  }
-}
 @keyframes slide {
   0% {
     transform: translateX(500px);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes fadeIn {

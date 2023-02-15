@@ -131,8 +131,7 @@ section {
     top: 5.2rem;
     left: 0;
     height: 100vh;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
     display: none;
   }
   nav .navbar-links ul {
@@ -152,8 +151,7 @@ section {
     top: 5.2rem;
     left: 0;
     display: none;
-    -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
   }
   nav .navbar-shop ul {
     flex-direction: column;
@@ -186,11 +184,6 @@ section {
 @media only screen and (max-width: 320px) {
   section {
     height: 250vh;
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(500px);
   }
 }
 @keyframes slide {
